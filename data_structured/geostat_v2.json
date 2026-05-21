@@ -1,0 +1,135 @@
+{
+  "source": "Statistics Georgia (GeoStat)",
+  "url": "https://www.geostat.ge/ka/modules/categories/61/umaghlesi-ganatleba",
+  "note": "Only real data from GeoStat. No fabricated values.",
+  "years": [
+    "2022-2023",
+    "2023-2024",
+    "2024-2025",
+    "2025-2026"
+  ],
+  "admissions": {
+    "2022-2023": {
+      "education": 1741,
+      "humanities": 4674,
+      "social_business_law": 20000,
+      "science": 6907,
+      "engineering": 2952,
+      "agriculture": 1192,
+      "health": 9587,
+      "services": 3075
+    },
+    "2023-2024": {
+      "education": 2240,
+      "humanities": 4744,
+      "social_business_law": 22191,
+      "science": 8234,
+      "engineering": 3225,
+      "agriculture": 1270,
+      "health": 8894,
+      "services": 3529
+    },
+    "2024-2025": {
+      "education": 2198,
+      "humanities": 4424,
+      "social_business_law": 19602,
+      "science": 8034,
+      "engineering": 3042,
+      "agriculture": 1151,
+      "health": 13058,
+      "services": 2703
+    },
+    "2025-2026": {
+      "education": 2686,
+      "humanities": 4541,
+      "social_business_law": 22826,
+      "science": 7942,
+      "engineering": 3409,
+      "agriculture": 1216,
+      "health": 13140,
+      "services": 2794
+    }
+  },
+  "enrollment": {
+    "2022-2023": {
+      "education": 4366,
+      "humanities": 16251,
+      "social_business_law": 61241,
+      "science": 21614,
+      "engineering": 10858,
+      "agriculture": 4118,
+      "health": 36455,
+      "services": 6389
+    },
+    "2023-2024": {
+      "education": 5105,
+      "humanities": 15581,
+      "social_business_law": 66515,
+      "science": 25038,
+      "engineering": 10413,
+      "agriculture": 3425,
+      "health": 42197,
+      "services": 9517
+    },
+    "2024-2025": {
+      "education": 5308,
+      "humanities": 16621,
+      "social_business_law": 66450,
+      "science": 26253,
+      "engineering": 11261,
+      "agriculture": 4128,
+      "health": 48201,
+      "services": 9577
+    },
+    "2025-2026": {
+      "education": 5695,
+      "humanities": 16071,
+      "social_business_law": 69890,
+      "science": 26420,
+      "engineering": 11411,
+      "agriculture": 4538,
+      "health": 52560,
+      "services": 8841
+    }
+  },
+  "graduates": {
+    "2022-2023": {},
+    "2023-2024": {},
+    "2024-2025": {},
+    "2025-2026": {}
+  },
+  "trends": {
+    "education": {
+      "trend": "growing",
+      "change_pct": 26.2
+    },
+    "humanities": {
+      "trend": "stable",
+      "change_pct": -5.3
+    },
+    "social_business_law": {
+      "trend": "stable",
+      "change_pct": -2.0
+    },
+    "science": {
+      "trend": "growing",
+      "change_pct": 16.3
+    },
+    "engineering": {
+      "trend": "stable",
+      "change_pct": 3.0
+    },
+    "agriculture": {
+      "trend": "stable",
+      "change_pct": -3.4
+    },
+    "health": {
+      "trend": "growing",
+      "change_pct": 36.2
+    },
+    "services": {
+      "trend": "declining",
+      "change_pct": -12.1
+    }
+  }
+}

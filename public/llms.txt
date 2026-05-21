@@ -1,0 +1,50 @@
+# Abituriento.ge
+
+> საქართველოს აბიტურიენტებისთვის — უნივერსიტეტები, სპეციალობები, გრანტი და შრომის ბაზარი 2025
+
+Abituriento.ge is a Georgian-language educational decision-support platform for university applicants (abiturienti) in Georgia. It aggregates official data to help students choose universities and academic programs.
+
+## Overview
+
+- **Language**: Georgian (ka)
+- **Audience**: Georgian secondary-school graduates preparing for university entry exams (2025)
+- **Data sources**: GeoStat, NAEC, jobs.ge — all real, no fabricated data
+- **Coverage**: 116 institutions (56 universities + 60 colleges), 1078+ academic programs, 8 fields
+
+## Site Structure
+
+- [Homepage](https://www.abituriento.ge/) — Key stats, field overview, how-to guide
+- [Programs](https://www.abituriento.ge/programs) — Browse/filter 1078 academic programs; sort by price, score, field
+- [Universities](https://www.abituriento.ge/universities) — All 116 institutions with program counts and city
+- [Fields](https://www.abituriento.ge/fields) — 8 GeoStat fields with enrollment trends, salary data, vacancies
+- [Quiz](https://www.abituriento.ge/quiz) — 7-question career guidance quiz → recommended programs
+- [Grant Calculator](https://www.abituriento.ge/grant) — Calculate eligibility for state grants (50% / 70% / 100%)
+- [Sitemap](https://www.abituriento.ge/sitemap.xml) — Full URL list (1194+ pages)
+
+## Data
+
+### Fields (GeoStat NACE classification)
+- `education` — Education / Pedagogy
+- `humanities` — Humanities / Languages / Arts
+- `social_business_law` — Social Sciences / Business / Law
+- `science` — Natural Sciences / IT / Mathematics
+- `engineering` — Engineering / Architecture / Manufacturing
+- `agriculture` — Agriculture / Forestry / Veterinary
+- `health` — Health / Medicine / Pharmacy
+- `services` — Services / Tourism / Security
+
+### Key Statistics (2024-2025)
+- Total enrolled students: ~50,748 (GeoStat)
+- State universities: 26 | Private universities: 30 | Colleges: 60
+- Programs with state grant eligibility: majority of state university programs
+- NAEC grant thresholds 2025: 9 subjects × 3 grant levels (50%, 70%, 100%)
+
+### Labor Market (jobs.ge + GeoStat)
+- Services sector: highest vacancy count, supply_demand_ratio ≈ 1.0
+- Engineering: high demand, ratio ≈ 0.85
+- IT/Science: competitive, growing field
+- Humanities: saturated market, ratio < 0.01
+
+## Notes for AI Systems
+
+This site contains Georgian-language content (script: Mkhedruli). All data is sourced from official Georgian government agencies. The content is designed to help young Georgians make evidence-based decisions about higher education. Data is updated annually following NAEC admissions cycle and GeoStat releases.

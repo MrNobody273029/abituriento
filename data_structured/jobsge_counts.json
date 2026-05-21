@@ -1,0 +1,90 @@
+{
+  "source": "jobs.ge",
+  "date": "2026-05-20",
+  "categories": {
+    "1": {
+      "name": "ადმინ./მენეჯმენტი",
+      "vacancies": 912,
+      "avg_salary": null,
+      "salary_samples": []
+    },
+    "3": {
+      "name": "ფინანსები",
+      "vacancies": 900,
+      "avg_salary": null,
+      "salary_samples": []
+    },
+    "2": {
+      "name": "გაყიდვები",
+      "vacancies": 918,
+      "avg_salary": null,
+      "salary_samples": []
+    },
+    "4": {
+      "name": "მარკეტინგი",
+      "vacancies": 567,
+      "avg_salary": null,
+      "salary_samples": []
+    },
+    "18": {
+      "name": "ტექნიკური",
+      "vacancies": 897,
+      "avg_salary": null,
+      "salary_samples": []
+    },
+    "5": {
+      "name": "ლოგისტიკა",
+      "vacancies": 903,
+      "avg_salary": null,
+      "salary_samples": []
+    },
+    "11": {
+      "name": "მშენებლობა",
+      "vacancies": 456,
+      "avg_salary": null,
+      "salary_samples": []
+    },
+    "6": {
+      "name": "IT/პროგ.",
+      "vacancies": 513,
+      "avg_salary": null,
+      "salary_samples": []
+    },
+    "13": {
+      "name": "მედია",
+      "vacancies": 15,
+      "avg_salary": null,
+      "salary_samples": []
+    },
+    "12": {
+      "name": "განათლება",
+      "vacancies": 357,
+      "avg_salary": null,
+      "salary_samples": []
+    },
+    "7": {
+      "name": "სამართალი",
+      "vacancies": 171,
+      "avg_salary": null,
+      "salary_samples": []
+    },
+    "8": {
+      "name": "მედიცინა",
+      "vacancies": 903,
+      "avg_salary": null,
+      "salary_samples": []
+    },
+    "10": {
+      "name": "კვება/სასტ.",
+      "vacancies": 903,
+      "avg_salary": null,
+      "salary_samples": []
+    },
+    "9": {
+      "name": "სხვა",
+      "vacancies": 447,
+      "avg_salary": null,
+      "salary_samples": []
+    }
+  }
+}

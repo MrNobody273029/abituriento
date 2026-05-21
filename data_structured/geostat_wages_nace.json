@@ -1,0 +1,132 @@
+{
+  "source": "GeoStat PX-Web API",
+  "table": "Wages_Nace2",
+  "years": [
+    "2022",
+    "2023",
+    "2024",
+    "2025"
+  ],
+  "data": {
+    "Total": {
+      "2022": 1543.0,
+      "2023": 1766.8,
+      "2024": 1970.8,
+      "2025": null
+    },
+    "Agriculture, forestry and fishing": {
+      "2022": 1061.2,
+      "2023": 1206.5,
+      "2024": 1281.9,
+      "2025": null
+    },
+    "Mining and quarrying": {
+      "2022": 2122.1,
+      "2023": 2097.4,
+      "2024": 2324.9,
+      "2025": null
+    },
+    "Manufacturing": {
+      "2022": 1472.1,
+      "2023": 1616.9,
+      "2024": 1874.2,
+      "2025": null
+    },
+    "Electricity, gas, steam and air conditioning supply": {
+      "2022": 1810.3,
+      "2023": 2078.4,
+      "2024": 2304.7,
+      "2025": null
+    },
+    "Water supply, sewerage, waste management and remediation activities": {
+      "2022": 1010.6,
+      "2023": 1156.6,
+      "2024": 1315.8,
+      "2025": null
+    },
+    "Construction": {
+      "2022": 2040.1,
+      "2023": 2311.7,
+      "2024": 2666.6,
+      "2025": null
+    },
+    "Wholesale and retail trade; repair of motor vehicles and motorcycles": {
+      "2022": 1356.0,
+      "2023": 1531.8,
+      "2024": 1710.9,
+      "2025": null
+    },
+    "Transportation and storage": {
+      "2022": 1680.5,
+      "2023": 1846.5,
+      "2024": 1972.2,
+      "2025": null
+    },
+    "Accommodation and food service activities": {
+      "2022": 1163.2,
+      "2023": 1354.3,
+      "2024": 1495.2,
+      "2025": null
+    },
+    "Information and communication": {
+      "2022": 3033.4,
+      "2023": 3858.5,
+      "2024": 3923.1,
+      "2025": null
+    },
+    "Financial and insurance activities": {
+      "2022": 2730.0,
+      "2023": 3215.2,
+      "2024": 3677.6,
+      "2025": null
+    },
+    "Real estate activities": {
+      "2022": 1486.5,
+      "2023": 1599.2,
+      "2024": 1861.7,
+      "2025": null
+    },
+    "Professional, scientific and technical activities": {
+      "2022": 2285.0,
+      "2023": 2506.5,
+      "2024": 2823.4,
+      "2025": null
+    },
+    "Administrative and support service activities": {
+      "2022": 1101.6,
+      "2023": 1295.1,
+      "2024": 1564.5,
+      "2025": null
+    },
+    "Public administration and defence; compulsory social security": {
+      "2022": 1823.2,
+      "2023": 2163.9,
+      "2024": 2395.2,
+      "2025": null
+    },
+    "Education": {
+      "2022": 941.6,
+      "2023": 1061.6,
+      "2024": 1233.3,
+      "2025": null
+    },
+    "Human health and social work activities": {
+      "2022": 1395.8,
+      "2023": 1513.9,
+      "2024": 1653.8,
+      "2025": null
+    },
+    "Arts, entertainment and recreation": {
+      "2022": 1482.3,
+      "2023": 1654.1,
+      "2024": 1818.5,
+      "2025": null
+    },
+    "Other service activities": {
+      "2022": 1058.9,
+      "2023": 1244.2,
+      "2024": 1305.6,
+      "2025": null
+    }
+  }
+}

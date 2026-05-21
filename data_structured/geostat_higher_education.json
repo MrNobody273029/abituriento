@@ -1,0 +1,403 @@
+{
+  "source": "GeoStat — Statistics Georgia",
+  "url": "https://www.geostat.ge/ka/modules/categories/61/umaghlesi-ganatleba",
+  "years": [
+    "2022-2023",
+    "2023-2024",
+    "2024-2025",
+    "2025-2026"
+  ],
+  "fields": [
+    "total",
+    "education",
+    "humanities",
+    "social_business_law",
+    "science",
+    "engineering",
+    "agriculture",
+    "health",
+    "services"
+  ],
+  "admissions": {
+    "2022-2023": {
+      "total": {},
+      "state": {
+        "total": 29432,
+        "education": 1621,
+        "humanities": 3400,
+        "social_business_law": 10714,
+        "science": 5474,
+        "engineering": 2117,
+        "agriculture": 745,
+        "health": 2958,
+        "services": 2403
+      },
+      "private": {
+        "education": 120,
+        "humanities": 1274,
+        "social_business_law": 9286,
+        "science": 1433,
+        "engineering": 835,
+        "agriculture": 447,
+        "health": 6629,
+        "services": 672
+      },
+      "female": {
+        "education": 108,
+        "humanities": 857,
+        "social_business_law": 5617,
+        "science": 334,
+        "engineering": 362,
+        "agriculture": 186,
+        "health": 3222,
+        "services": 292
+      },
+      "male": {
+        "education": 12,
+        "humanities": 417,
+        "social_business_law": 3669,
+        "science": 1099,
+        "engineering": 473,
+        "agriculture": 261,
+        "health": 3407,
+        "services": 380
+      }
+    },
+    "2023-2024": {
+      "total": {},
+      "state": {
+        "total": 32391,
+        "education": 1832,
+        "humanities": 3545,
+        "social_business_law": 11800,
+        "science": 6430,
+        "engineering": 2375,
+        "agriculture": 844,
+        "health": 2915,
+        "services": 2650
+      },
+      "private": {
+        "education": 408,
+        "humanities": 1199,
+        "social_business_law": 10391,
+        "science": 1804,
+        "engineering": 850,
+        "agriculture": 426,
+        "health": 5979,
+        "services": 879
+      },
+      "female": {
+        "education": 375,
+        "humanities": 866,
+        "social_business_law": 5704,
+        "science": 368,
+        "engineering": 428,
+        "agriculture": 188,
+        "health": 3275,
+        "services": 351
+      },
+      "male": {
+        "education": 33,
+        "humanities": 333,
+        "social_business_law": 4687,
+        "science": 1436,
+        "engineering": 422,
+        "agriculture": 238,
+        "health": 2704,
+        "services": 528
+      }
+    },
+    "2024-2025": {
+      "total": {},
+      "state": {
+        "total": 30464,
+        "education": 1719,
+        "humanities": 3345,
+        "social_business_law": 11312,
+        "science": 6084,
+        "engineering": 2278,
+        "agriculture": 783,
+        "health": 2978,
+        "services": 1965
+      },
+      "private": {
+        "education": 479,
+        "humanities": 1079,
+        "social_business_law": 8290,
+        "science": 1950,
+        "engineering": 764,
+        "agriculture": 368,
+        "health": 10080,
+        "services": 738
+      },
+      "female": {
+        "education": 427,
+        "humanities": 839,
+        "social_business_law": 4841,
+        "science": 418,
+        "engineering": 362,
+        "agriculture": 192,
+        "health": 5535,
+        "services": 201
+      },
+      "male": {
+        "education": 52,
+        "humanities": 240,
+        "social_business_law": 3449,
+        "science": 1532,
+        "engineering": 402,
+        "agriculture": 176,
+        "health": 4545,
+        "services": 537
+      }
+    },
+    "2025-2026": {
+      "total": {},
+      "state": {
+        "total": 31533,
+        "education": 2120,
+        "humanities": 3459,
+        "social_business_law": 12210,
+        "science": 5692,
+        "engineering": 2418,
+        "agriculture": 902,
+        "health": 2527,
+        "services": 2205
+      },
+      "private": {
+        "education": 566,
+        "humanities": 1082,
+        "social_business_law": 10616,
+        "science": 2250,
+        "engineering": 991,
+        "agriculture": 314,
+        "health": 10613,
+        "services": 589
+      },
+      "female": {
+        "education": 492,
+        "humanities": 770,
+        "social_business_law": 5596,
+        "science": 499,
+        "engineering": 422,
+        "agriculture": 153,
+        "health": 5792,
+        "services": 172
+      },
+      "male": {
+        "education": 74,
+        "humanities": 312,
+        "social_business_law": 5020,
+        "science": 1751,
+        "engineering": 569,
+        "agriculture": 161,
+        "health": 4821,
+        "services": 417
+      }
+    }
+  },
+  "enrollment": {
+    "2022-2023": {
+      "total": {},
+      "state": {
+        "education": 4142,
+        "humanities": 11174,
+        "social_business_law": 33795,
+        "science": 17587,
+        "engineering": 8274,
+        "agriculture": 2501,
+        "health": 15430,
+        "services": 4865
+      },
+      "private": {
+        "education": 224,
+        "humanities": 5077,
+        "social_business_law": 27446,
+        "science": 4027,
+        "engineering": 2584,
+        "agriculture": 1617,
+        "health": 21025,
+        "services": 1524
+      },
+      "female": {
+        "education": 210,
+        "humanities": 3598,
+        "social_business_law": 15981,
+        "science": 839,
+        "engineering": 1012,
+        "agriculture": 752,
+        "health": 10161,
+        "services": 621
+      },
+      "male": {
+        "education": 14,
+        "humanities": 1479,
+        "social_business_law": 11465,
+        "science": 3188,
+        "engineering": 1572,
+        "agriculture": 865,
+        "health": 10864,
+        "services": 903
+      }
+    },
+    "2023-2024": {
+      "total": {},
+      "state": {
+        "education": 4592,
+        "humanities": 11896,
+        "social_business_law": 35961,
+        "science": 19436,
+        "engineering": 7787,
+        "agriculture": 2592,
+        "health": 16197,
+        "services": 6681
+      },
+      "private": {
+        "education": 513,
+        "humanities": 3685,
+        "social_business_law": 30554,
+        "science": 5602,
+        "engineering": 2626,
+        "agriculture": 833,
+        "health": 26000,
+        "services": 2836
+      },
+      "female": {
+        "education": 481,
+        "humanities": 2604,
+        "social_business_law": 17782,
+        "science": 1303,
+        "engineering": 1253,
+        "agriculture": 367,
+        "health": 12613,
+        "services": 1055
+      },
+      "male": {
+        "education": 32,
+        "humanities": 1081,
+        "social_business_law": 12772,
+        "science": 4299,
+        "engineering": 1373,
+        "agriculture": 466,
+        "health": 13387,
+        "services": 1781
+      }
+    },
+    "2024-2025": {
+      "total": {},
+      "state": {
+        "education": 4639,
+        "humanities": 12728,
+        "social_business_law": 37171,
+        "science": 20365,
+        "engineering": 8006,
+        "agriculture": 2720,
+        "health": 15787,
+        "services": 6965
+      },
+      "private": {
+        "education": 669,
+        "humanities": 3893,
+        "social_business_law": 29279,
+        "science": 5888,
+        "engineering": 3255,
+        "agriculture": 1408,
+        "health": 32414,
+        "services": 2612
+      },
+      "female": {
+        "education": 610,
+        "humanities": 2918,
+        "social_business_law": 17259,
+        "science": 1185,
+        "engineering": 1445,
+        "agriculture": 681,
+        "health": 16707,
+        "services": 906
+      },
+      "male": {
+        "education": 59,
+        "humanities": 975,
+        "social_business_law": 12020,
+        "science": 4703,
+        "engineering": 1810,
+        "agriculture": 727,
+        "health": 15707,
+        "services": 1706
+      }
+    },
+    "2025-2026": {
+      "total": {},
+      "state": {
+        "education": 5003,
+        "humanities": 12210,
+        "social_business_law": 38280,
+        "science": 20009,
+        "engineering": 8161,
+        "agriculture": 3159,
+        "health": 14624,
+        "services": 6652
+      },
+      "private": {
+        "education": 692,
+        "humanities": 3861,
+        "social_business_law": 31610,
+        "science": 6411,
+        "engineering": 3250,
+        "agriculture": 1379,
+        "health": 37936,
+        "services": 2189
+      },
+      "female": {
+        "education": 622,
+        "humanities": 2695,
+        "social_business_law": 18141,
+        "science": 1401,
+        "engineering": 1502,
+        "agriculture": 693,
+        "health": 19799,
+        "services": 764
+      },
+      "male": {
+        "education": 70,
+        "humanities": 1166,
+        "social_business_law": 13469,
+        "science": 5010,
+        "engineering": 1748,
+        "agriculture": 686,
+        "health": 18137,
+        "services": 1425
+      }
+    }
+  },
+  "graduates": {
+    "2022-2023": {
+      "total": {},
+      "state": {},
+      "private": {},
+      "female": {},
+      "male": {}
+    },
+    "2023-2024": {
+      "total": {},
+      "state": {},
+      "private": {},
+      "female": {},
+      "male": {}
+    },
+    "2024-2025": {
+      "total": {},
+      "state": {},
+      "private": {},
+      "female": {},
+      "male": {}
+    },
+    "2025-2026": {
+      "total": {},
+      "state": {},
+      "private": {},
+      "female": {},
+      "male": {}
+    }
+  }
+}

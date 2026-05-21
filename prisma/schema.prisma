@@ -1,0 +1,105 @@
+generator client {
+  provider = "prisma-client"
+  output   = "../lib/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model University {
+  id             String    @id @default(cuid())
+  name_ka        String
+  name_en        String
+  website        String
+  logo_url       String?
+  type           String
+  city           String
+  description_ka String?
+  createdAt      DateTime  @default(now())
+  address        String?
+  category       String    @default("university")
+  email          String?
+  phone          String?
+  slug           String?   @unique
+  programs       Program[]
+}
+
+model Program {
+  id               String     @id @default(cuid())
+  universityId     String
+  name_ka          String
+  name_en          String
+  faculty_ka       String
+  degree           String
+  duration_years   Int
+  tuition_fee      Int
+  is_state_funded  Boolean    @default(false)
+  grant_score_2025 Int?
+  grant_score_2024 Int?
+  grant_score_2023 Int?
+  field            String
+  description_ka   String?
+  createdAt        DateTime   @default(now())
+  // NAEC 2025 exam subjects (from cnobari)
+  exams                Json?
+  // NAEC 2025 admitted-students stats
+  admitted_2025        Int?
+  min_score_2025       Float?
+  median_score_2025    Float?
+  max_score_2025       Float?
+  grant_any_pct_2025   Float?
+  grant_50_count_2025  Int?
+  grant_70_count_2025  Int?
+  grant_100_count_2025 Int?
+  university       University @relation(fields: [universityId], references: [id])
+}
+
+model GrantThreshold {
+  id        String @id @default(cuid())
+  year      Int
+  subject   String
+  grant_50  Float?
+  grant_70  Float?
+  grant_100 Float?
+
+  @@unique([year, subject])
+}
+
+model MarketData {
+  id               String   @id @default(cuid())
+  field            String   @unique
+  field_name_ka    String
+  trend            String
+  updated_at       DateTime @default(now())
+  source           String?
+  admitted_2022    Int?
+  admitted_2023    Int?
+  admitted_2024    Int?
+  admitted_2025    Int?
+  graduated_2022   Int?
+  graduated_2023   Int?
+  graduated_2024   Int?
+  graduated_2025   Int?
+  subprograms      Json?
+  trend_pct        Float?
+  avg_salary_2022      Float?
+  avg_salary_2023      Float?
+  avg_salary_2024      Float?
+  vacancies_jobsge     Int?
+  supply_demand_ratio  Float?
+}
+
+model ProfessionSalary {
+  id                  String @id @default(cuid())
+  isco_code           String @unique
+  name_ka             String
+  name_en             String
+  field               String
+  salary_2021         Float
+  salary_2024est      Int
+  salary_female_2021  Float?
+  salary_male_2021    Float?
+  relevant            Boolean @default(true)
+  source              String
+}

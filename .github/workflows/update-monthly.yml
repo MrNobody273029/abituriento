@@ -1,0 +1,14 @@
+name: Monthly Market Data Update
+on:
+  schedule:
+    - cron: '0 0 1 * *'
+  workflow_dispatch:
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Call update endpoint
+        run: |
+          curl -X POST ${{ secrets.NEXT_PUBLIC_APP_URL }}/api/cron/update-market-data \
+          -H "Authorization: Bearer ${{ secrets.CRON_SECRET }}"

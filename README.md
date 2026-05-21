@@ -1,8 +1,8 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Abituriento.ge
 
-## Getting Started
+საქართველოს აბიტურიენტებისთვის შექმნილი კარიერული გზამკვლევი.
 
-First, run the development server:
+## სწრაფი დაწყება
 
 ```bash
 npm run dev

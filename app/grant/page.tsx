@@ -1,6 +1,8 @@
 import { prisma } from "@/lib/prisma"
 import GrantClient from "./GrantClient"
 
+export const dynamic = "force-dynamic"
+
 import { SITE_URL } from "@/lib/site"
 
 export const metadata = {

@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { ArrowLeft, ArrowRight, RotateCcw, MapPin, Banknote, TrendingUp, TrendingDown, Minus, Briefcase } from "lucide-react"
+import { ArrowRight, RotateCcw, MapPin, Banknote } from "lucide-react"
 import { prisma } from "@/lib/prisma"
 import { computeFieldScores, topFields } from "@/lib/quiz-match"
 import { FIELDS, DEGREE_LABELS } from "@/lib/constants"
@@ -38,13 +38,6 @@ type MarketRow = {
   trend: string
 }
 
-function demandBadge(ratio: number | null) {
-  if (ratio == null) return null
-  if (ratio >= 0.8)  return { label: "მაღალი მოთხოვნა",  cls: "bg-green-100 text-green-800 border-green-200" }
-  if (ratio >= 0.25) return { label: "საშუალო",        cls: "bg-yellow-100 text-yellow-800 border-yellow-200" }
-  if (ratio >= 0.10) return { label: "კონკურენტული",   cls: "bg-orange-100 text-orange-800 border-orange-200" }
-  return               { label: "გაჯერებული ბაზარი",    cls: "bg-red-100 text-red-800 border-red-200" }
-}
 
 export default async function QuizResultsPage({
   searchParams,
@@ -182,54 +175,6 @@ export default async function QuizResultsPage({
         </Link>
       </div>
 
-      {/* ── Field market summaries ── */}
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-8">
-        {fields.map((f, i) => {
-          const md        = marketMap[f]
-          const demand    = demandBadge(md?.supply_demand_ratio ?? null)
-          const salaryGrowth = md?.avg_salary_2024 && md?.avg_salary_2022
-            ? Math.round(((md.avg_salary_2024 - md.avg_salary_2022) / md.avg_salary_2022) * 100)
-            : null
-          const TrendIcon = md?.trend === "growing" ? TrendingUp : md?.trend === "declining" ? TrendingDown : Minus
-          const trendColor = md?.trend === "growing" ? "text-green-600" : md?.trend === "declining" ? "text-red-500" : "text-gray-400"
-          const RANK_BG = ["bg-[#F97316]", "bg-[#1E3A8A]", "bg-gray-400"]
-
-          const fAccent = FIELD_ACCENT[f] || "#1E3A8A"
-          return (
-            <div key={f} className="bg-white rounded-2xl border border-gray-100 border-l-[3px] shadow-sm p-4" style={{ borderLeftColor: fAccent }}>
-              <div className="flex items-center gap-2 mb-2">
-                <span className={`w-6 h-6 rounded-full flex items-center justify-center text-white text-xs font-bold shrink-0 ${RANK_BG[i]}`}>{i + 1}</span>
-                <span className="font-semibold text-sm text-gray-900 leading-tight">
-                  {FIELDS[f as keyof typeof FIELDS]?.name_ka || f}
-                </span>
-              </div>
-              <div className="flex items-center justify-between text-xs text-gray-500 gap-2">
-                {md?.avg_salary_2024 ? (
-                  <span className="font-bold text-[#1E3A8A]">{Math.round(md.avg_salary_2024).toLocaleString()} ₾/თვე</span>
-                ) : <span>—</span>}
-                {salaryGrowth !== null && (
-                  <span className={`flex items-center gap-0.5 font-medium ${trendColor}`}>
-                    <TrendIcon className="w-3 h-3" />
-                    {salaryGrowth > 0 ? "+" : ""}{salaryGrowth}%
-                  </span>
-                )}
-              </div>
-              <div className="flex items-center gap-2 mt-1.5">
-                {demand && (
-                  <span className={`text-[10px] font-semibold px-2 py-0.5 rounded-full border ${demand.cls}`}>
-                    {demand.label}
-                  </span>
-                )}
-                {md?.vacancies_jobsge != null && (
-                  <span className="text-[10px] text-gray-400 flex items-center gap-0.5">
-                    <Briefcase className="w-3 h-3" />{md.vacancies_jobsge.toLocaleString()} ვაკანსია
-                  </span>
-                )}
-              </div>
-            </div>
-          )
-        })}
-      </div>
 
       {/* ── Program groups ── */}
       {!hasResults ? (

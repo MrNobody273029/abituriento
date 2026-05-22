@@ -22,7 +22,7 @@
 | MarketData | 8 | GeoStat სფერო — ჩარიცხვა/კურსდამთ./ხელფ./ვაკ./ratio |
 | GrantThreshold | 12 | NAEC 2025 — 9 საგ. × 3 დონე |
 | ProfessionSalary | 21 | GeoStat ISCO-08 — 2021 × 1.511 → 2024 est. |
-| OccupationSalary | 30 | 30 პროფესია — GeoStat/Paylab 2024, ISCO კოდი, 🇬🇪+🌍 ხელფასი |
+| OccupationSalary | 30 | 30 პროფ. — **GeoStat 2025 preliminary** (Mar 2026), ISCO კოდი, 🇬🇪+🌍 ხელფასი |
 
 ---
 
@@ -37,7 +37,8 @@
 - [x] NAEC cnobari 2025 PDF (929 გვ.) → exams JSON (651 prog)
 - [x] `grant_score_2025` — 537 prog seeded (round(min_score_2025))
 - [x] **OccupationSalary** — 30 პროფ. → DB (`seed_occupations.ts`)
-  - GeoStat ISCO-08 2024 + Paylab.ge 2024 წყაროები
+  - **GeoStat 2025 preliminary** (გამოქვ. 2026 მარტი) — ეროვ. საშ. 2,283 ₾ (+15.8%)
+  - სექტ. growth rates: IT +9.1%, მშენ. +17.2%, ფინ. +11.1%, ჯანდ./საჯ. +13.0%, ბიზნ. +10.2%
   - 🇬🇪 min/avg/max ₾/თვე + 🌍 int_avg (EUR/USD) ყველასთვის
 - [x] **Program.occupation_slug** — 968/1078 mapped (`map_program_occupations.ts`)
   - 110 unmapped: ენის მომზ., vocational edge cases (შედუღება, სარესტ. მომ. etc.)
@@ -93,10 +94,8 @@
 - შემდეგ GSC-ში დაამატე sitemap: `https://www.abituriento.ge/sitemap.xml`
 
 ### [2] 💰 OccupationSalary — მომავალი გაუმჯობესება
-- **2025 მონაცემების განახლება**: GeoStat-ი 2024-ის სრულ წლიურ მონაცემებს 2025 Q1-ში აქვეყნებს
-  - ამჟამინდელი: GeoStat ISCO-08 2024 (Paylab.ge 2024)
-  - განახლება: GeoStat ოფ. 2024 ან Q1/2025 quarterly data ხელმისაწვდომობისას
-- 110 unmapped prog-ის დამატება (vocational + edge cases)
+- **ISCO-08 დეტალური ცხრილები**: geostat.ge/salarium → XLS/CSV სტატ. ცხრ. — პირდაპირი ISCO-08 კატ. 2025 მონ. (ახლა estimation-ით გვაქვს სექტ. growth-ით)
+- 110 unmapped prog-ის დამატება (vocational + edge cases: შედუღება, სარესტ. მომ. etc.)
 - `hr_specialist` ≈ 0 match — patterns გაძლიერება საჭიროა
 
 ---

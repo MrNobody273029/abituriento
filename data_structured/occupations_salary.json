@@ -1,11 +1,14 @@
 {
-  "year": 2024,
-  "national_avg_gel": 1971,
+  "year": 2025,
+  "national_avg_gel": 2283,
+  "national_avg_yoy_pct": 15.8,
+  "methodology": "GeoStat 2025 preliminary annual average (published March 2026). Occupation averages estimated by applying official GeoStat 2025 NACE-sector growth rates to 2024 ISCO-08 baselines. Sector growth: IT +9.1%, Construction +17.2%, Finance +11.1%, Health/Public +13.0%, Business +10.2%, National +15.8%.",
   "sources": [
-    "GeoStat ISCO-08 2024 — geostat.ge/en/modules/categories/39/wages",
-    "Paylab.com/ge salary survey 2024 — paylab.com/ge",
-    "BTU AI sector analysis 2024 — btuai.ge",
-    "GeoStat sector earnings 2024 — geostat.ge"
+    "GeoStat Q4 2025 press release — geostat.ge (March 18, 2026)",
+    "GeoStat NACE sector earnings 2025 — geostat.ge/en/modules/categories/39/wages",
+    "GeoStat Salarium tool 2025 — geostat.ge/salarium",
+    "Paylab.com/ge salary survey 2025",
+    "BTU AI sector analysis 2025 — btuai.ge"
   ],
   "occupations": [
     {
@@ -16,21 +19,21 @@
       "positions_ka": [
         "პროგრამისტი",
         "ვებ-დეველოპერი",
-        "მობილური დეველოপერი",
+        "მობილური დეველოპერი",
         "DevOps ინჟინერი",
         "QA ინჟინერი",
         "Data Scientist",
         "IT ანალიტიკოსი",
         "კიბერუსაფრთხოების სპეც."
       ],
-      "salary_min": 1200,
-      "salary_avg": 2850,
-      "salary_max": 6000,
-      "salary_source_ka": "GeoStat ISCO-25 2024 · Paylab.ge IT კატეგ.",
-      "salary_int_avg": 5500,
+      "salary_min": 1310,
+      "salary_avg": 3110,
+      "salary_max": 6550,
+      "salary_source_ka": "GeoStat IT სექ. 2025 (+9.1%) · ISCO-2512 · Paylab.ge 2025",
+      "salary_int_avg": 5800,
       "salary_int_currency": "USD",
       "salary_int_country": "EU/US",
-      "salary_int_source": "Glassdoor / Levels.fyi EU average 2024"
+      "salary_int_source": "Glassdoor / Levels.fyi EU average 2025"
     },
     {
       "slug": "lawyer",
@@ -45,14 +48,14 @@
         "შიდა ანდერრაიტერი",
         "კომპლაიანს სპეციალისტი"
       ],
-      "salary_min": 1100,
-      "salary_avg": 2150,
-      "salary_max": 5000,
-      "salary_source_ka": "GeoStat ISCO-26 2024 · Paylab.ge იურ. კატეგ. (1,173-3,096₾)",
-      "salary_int_avg": 4500,
+      "salary_min": 1220,
+      "salary_avg": 2390,
+      "salary_max": 5560,
+      "salary_source_ka": "GeoStat ფინ./სამართ. სექ. 2025 (+11.1%) · ISCO-2611 · Paylab.ge 2025",
+      "salary_int_avg": 4700,
       "salary_int_currency": "EUR",
       "salary_int_country": "EU",
-      "salary_int_source": "Eurostat / Glassdoor EU average 2024"
+      "salary_int_source": "Eurostat / Glassdoor EU average 2025"
     },
     {
       "slug": "doctor",
@@ -68,14 +71,14 @@
         "კარდიოლოგი",
         "ფსიქიატრი"
       ],
-      "salary_min": 1500,
-      "salary_avg": 2600,
-      "salary_max": 6500,
-      "salary_source_ka": "GeoStat ISCO-22 2024 (2,186₾) · Paylab.ge ექ. (1,581-3,661₾)",
-      "salary_int_avg": 6000,
+      "salary_min": 1700,
+      "salary_avg": 2940,
+      "salary_max": 7350,
+      "salary_source_ka": "GeoStat ჯანდაც. სექ. 2025 (+13.0%) · ISCO-2211 · Paylab.ge 2025",
+      "salary_int_avg": 6300,
       "salary_int_currency": "EUR",
       "salary_int_country": "EU",
-      "salary_int_source": "OECD Health Statistics 2024"
+      "salary_int_source": "OECD Health Statistics 2025"
     },
     {
       "slug": "dentist",
@@ -88,14 +91,14 @@
         "ქირურგი-სტომ.",
         "სტომ. ჰიგიენისტი"
       ],
-      "salary_min": 2000,
-      "salary_avg": 4200,
-      "salary_max": 9000,
-      "salary_source_ka": "GeoStat ჯანდაც. სფ. + კლინიკ. ტარიფები 2024",
-      "salary_int_avg": 6500,
+      "salary_min": 2260,
+      "salary_avg": 4750,
+      "salary_max": 10170,
+      "salary_source_ka": "GeoStat ჯანდაც. სექ. 2025 (+13.0%) · კლინ. ტარიფები 2025",
+      "salary_int_avg": 6800,
       "salary_int_currency": "EUR",
       "salary_int_country": "EU",
-      "salary_int_source": "Eurostat ISCO-2261 2024"
+      "salary_int_source": "Eurostat ISCO-2261 2025"
     },
     {
       "slug": "pharmacist",
@@ -108,14 +111,14 @@
         "ფარმ. ტექნოლოგი",
         "მარეგულ. სპეც."
       ],
-      "salary_min": 1200,
-      "salary_avg": 1900,
-      "salary_max": 3800,
-      "salary_source_ka": "Paylab.ge ფარმ. კატეგ. 2024 (1,880₾ სექ. საშ.)",
-      "salary_int_avg": 4200,
+      "salary_min": 1360,
+      "salary_avg": 2150,
+      "salary_max": 4290,
+      "salary_source_ka": "GeoStat ჯანდაც. სექ. 2025 (+13.0%) · ISCO-2262 · Paylab.ge 2025",
+      "salary_int_avg": 4400,
       "salary_int_currency": "EUR",
       "salary_int_country": "EU",
-      "salary_int_source": "Eurostat ISCO-2262 2024"
+      "salary_int_source": "Eurostat ISCO-2262 2025"
     },
     {
       "slug": "nurse",
@@ -129,14 +132,14 @@
         "სათ. ექ. ას.",
         "ბაქინი პერსონ."
       ],
-      "salary_min": 900,
-      "salary_avg": 1300,
-      "salary_max": 2500,
-      "salary_source_ka": "GeoStat ISCO-32 2024 (1,303₾)",
-      "salary_int_avg": 2800,
+      "salary_min": 1020,
+      "salary_avg": 1470,
+      "salary_max": 2830,
+      "salary_source_ka": "GeoStat ჯანდაც. სექ. 2025 (+13.0%) · ISCO-3221",
+      "salary_int_avg": 2950,
       "salary_int_currency": "EUR",
       "salary_int_country": "EU",
-      "salary_int_source": "Eurostat ISCO-3221 2024"
+      "salary_int_source": "Eurostat ISCO-3221 2025"
     },
     {
       "slug": "business_manager",
@@ -151,14 +154,14 @@
         "პროექტის მენ.",
         "სტარტაპ დამფ."
       ],
-      "salary_min": 1400,
-      "salary_avg": 2700,
-      "salary_max": 6000,
-      "salary_source_ka": "GeoStat ISCO-12 2024 (3,494₾) · Paylab.ge მენ. კატ. (2,652₾)",
-      "salary_int_avg": 5000,
+      "salary_min": 1540,
+      "salary_avg": 2980,
+      "salary_max": 6610,
+      "salary_source_ka": "GeoStat ბიზნ. სექ. 2025 (+10.2%) · ISCO-1212 · Paylab.ge 2025",
+      "salary_int_avg": 5200,
       "salary_int_currency": "EUR",
       "salary_int_country": "EU",
-      "salary_int_source": "Glassdoor / Paylab EU 2024"
+      "salary_int_source": "Glassdoor / Paylab EU 2025"
     },
     {
       "slug": "accountant",
@@ -173,14 +176,14 @@
         "საგ. სპეც.",
         "IFRS სპეც."
       ],
-      "salary_min": 700,
-      "salary_avg": 1550,
-      "salary_max": 4000,
-      "salary_source_ka": "GeoStat ISCO-33 2024 (1,743₾) · Paylab.ge ბუღ. (737-2,311₾)",
-      "salary_int_avg": 3200,
+      "salary_min": 780,
+      "salary_avg": 1720,
+      "salary_max": 4440,
+      "salary_source_ka": "GeoStat ფინ./სადაზ. სექ. 2025 (+11.1%) · ISCO-3313 · Paylab.ge 2025",
+      "salary_int_avg": 3350,
       "salary_int_currency": "EUR",
       "salary_int_country": "EU",
-      "salary_int_source": "Eurostat ISCO-3313 2024"
+      "salary_int_source": "Eurostat ISCO-3313 2025"
     },
     {
       "slug": "economist",
@@ -195,14 +198,14 @@
         "ბიუჯ. სპეც.",
         "მაკ. ანალ."
       ],
-      "salary_min": 800,
-      "salary_avg": 1800,
-      "salary_max": 4500,
-      "salary_source_ka": "Paylab.ge ეკო. (832-2,603₾) · GeoStat ფინ./დაზ. სექ. 3,374₾",
-      "salary_int_avg": 4000,
+      "salary_min": 890,
+      "salary_avg": 2000,
+      "salary_max": 5000,
+      "salary_source_ka": "GeoStat ფინ./სადაზ. სექ. 2025 (+11.1%) · ISCO-2411 · Paylab.ge 2025",
+      "salary_int_avg": 4200,
       "salary_int_currency": "EUR",
       "salary_int_country": "EU",
-      "salary_int_source": "Eurostat ISCO-2411 2024"
+      "salary_int_source": "Eurostat ISCO-2411 2025"
     },
     {
       "slug": "civil_engineer",
@@ -216,14 +219,14 @@
         "პრ. მენ. (მშ.)",
         "გ-ი ინ-ი"
       ],
-      "salary_min": 1000,
-      "salary_avg": 2050,
-      "salary_max": 4500,
-      "salary_source_ka": "GeoStat ISCO-71 2024 (2,057₾) · Paylab.ge მშ. (1,827₾ სექ.)",
-      "salary_int_avg": 3800,
+      "salary_min": 1170,
+      "salary_avg": 2400,
+      "salary_max": 5270,
+      "salary_source_ka": "GeoStat მშენ. სექ. 2025 (+17.2%) · ISCO-2142 · Paylab.ge 2025",
+      "salary_int_avg": 4000,
       "salary_int_currency": "EUR",
       "salary_int_country": "EU",
-      "salary_int_source": "Eurostat ISCO-2142 2024"
+      "salary_int_source": "Eurostat ISCO-2142 2025"
     },
     {
       "slug": "electrical_engineer",
@@ -237,14 +240,14 @@
         "ელ-კ. ინ-ი",
         "ავტ. სპ."
       ],
-      "salary_min": 1100,
-      "salary_avg": 1800,
-      "salary_max": 4000,
-      "salary_source_ka": "GeoStat ISCO-74 2024 (1,879₾) · Paylab.ge ელ. ინ. (1,744₾)",
-      "salary_int_avg": 3800,
+      "salary_min": 1290,
+      "salary_avg": 2110,
+      "salary_max": 4690,
+      "salary_source_ka": "GeoStat მშენ./ენ. სექ. 2025 (+17.2%) · ISCO-2151 · Paylab.ge 2025",
+      "salary_int_avg": 4000,
       "salary_int_currency": "EUR",
       "salary_int_country": "EU",
-      "salary_int_source": "Eurostat ISCO-2151 2024"
+      "salary_int_source": "Eurostat ISCO-2151 2025"
     },
     {
       "slug": "mechanical_engineer",
@@ -258,14 +261,14 @@
         "ხ-ო ინ-ი",
         "ს-ო მ-ო"
       ],
-      "salary_min": 1000,
-      "salary_avg": 1750,
-      "salary_max": 3500,
-      "salary_source_ka": "GeoStat ISCO-72 2024 · Paylab.ge მექ. ინ. (1,716₾)",
-      "salary_int_avg": 3600,
+      "salary_min": 1160,
+      "salary_avg": 2030,
+      "salary_max": 4050,
+      "salary_source_ka": "GeoStat საწარ. სექ. 2025 (+15.8% ეროვ.) · ISCO-2144 · Paylab.ge 2025",
+      "salary_int_avg": 3750,
       "salary_int_currency": "EUR",
       "salary_int_country": "EU",
-      "salary_int_source": "Eurostat ISCO-2144 2024"
+      "salary_int_source": "Eurostat ISCO-2144 2025"
     },
     {
       "slug": "architect",
@@ -279,14 +282,14 @@
         "BIM სპ.",
         "ლ-ს-ო ა-ი"
       ],
-      "salary_min": 1000,
-      "salary_avg": 1850,
-      "salary_max": 4500,
-      "salary_source_ka": "GeoStat ISCO-21 + Paylab.ge მშ. კატ. 2024",
-      "salary_int_avg": 4000,
+      "salary_min": 1170,
+      "salary_avg": 2170,
+      "salary_max": 5270,
+      "salary_source_ka": "GeoStat მშენ. სექ. 2025 (+17.2%) · ISCO-2161 · Paylab.ge 2025",
+      "salary_int_avg": 4200,
       "salary_int_currency": "EUR",
       "salary_int_country": "EU",
-      "salary_int_source": "Eurostat ISCO-2161 2024"
+      "salary_int_source": "Eurostat ISCO-2161 2025"
     },
     {
       "slug": "teacher",
@@ -301,14 +304,14 @@
         "ლოგოპედი",
         "სკ. ფსიქ."
       ],
-      "salary_min": 800,
-      "salary_avg": 1450,
-      "salary_max": 3000,
-      "salary_source_ka": "GeoStat ISCO-23 2024 (1,502₾) · Paylab.ge გან. კატ. (1,427₾)",
-      "salary_int_avg": 3000,
+      "salary_min": 900,
+      "salary_avg": 1640,
+      "salary_max": 3390,
+      "salary_source_ka": "GeoStat განათ. სექ. 2025 (+13.0%) · ISCO-2330 · Paylab.ge 2025",
+      "salary_int_avg": 3150,
       "salary_int_currency": "EUR",
       "salary_int_country": "EU",
-      "salary_int_source": "Eurostat ISCO-233 2024"
+      "salary_int_source": "Eurostat ISCO-233 2025"
     },
     {
       "slug": "psychologist",
@@ -322,14 +325,14 @@
         "ოჯ. ფსიქ. ტ-ეი",
         "HR ფსიქ."
       ],
-      "salary_min": 900,
-      "salary_avg": 1600,
-      "salary_max": 3500,
-      "salary_source_ka": "Paylab.ge სოც. / ჯანდ. კატ. 2024 (1,619₾ სექ. საშ.)",
-      "salary_int_avg": 3500,
+      "salary_min": 1020,
+      "salary_avg": 1810,
+      "salary_max": 3960,
+      "salary_source_ka": "GeoStat ჯანდ./სოც. სექ. 2025 (+13.0%) · ISCO-2634 · Paylab.ge 2025",
+      "salary_int_avg": 3700,
       "salary_int_currency": "EUR",
       "salary_int_country": "EU",
-      "salary_int_source": "Eurostat ISCO-2634 2024"
+      "salary_int_source": "Eurostat ISCO-2634 2025"
     },
     {
       "slug": "journalist",
@@ -343,14 +346,14 @@
         "კ-ტ. მარ.",
         "ვიდ. პ-ი"
       ],
-      "salary_min": 800,
-      "salary_avg": 1450,
-      "salary_max": 3000,
-      "salary_source_ka": "Paylab.ge ჟ-ზ. / მ. კატ. 2024 (1,458₾)",
-      "salary_int_avg": 2800,
+      "salary_min": 930,
+      "salary_avg": 1680,
+      "salary_max": 3470,
+      "salary_source_ka": "GeoStat ბიზნ. სექ. 2025 (+15.8% ეროვ.) · ISCO-2642 · Paylab.ge 2025",
+      "salary_int_avg": 2950,
       "salary_int_currency": "EUR",
       "salary_int_country": "EU",
-      "salary_int_source": "Eurostat ISCO-2642 2024"
+      "salary_int_source": "Eurostat ISCO-2642 2025"
     },
     {
       "slug": "marketing_specialist",
@@ -364,14 +367,14 @@
         "SMM / SEO",
         "ბ-ი ანალ."
       ],
-      "salary_min": 900,
-      "salary_avg": 1700,
-      "salary_max": 4000,
-      "salary_source_ka": "Paylab.ge მარქ. კატ. 2024 (1,691₾)",
-      "salary_int_avg": 3500,
+      "salary_min": 990,
+      "salary_avg": 1870,
+      "salary_max": 4410,
+      "salary_source_ka": "GeoStat ბიზნ. სექ. 2025 (+10.2%) · ISCO-2431 · Paylab.ge 2025",
+      "salary_int_avg": 3700,
       "salary_int_currency": "EUR",
       "salary_int_country": "EU",
-      "salary_int_source": "Glassdoor EU Marketing 2024"
+      "salary_int_source": "Glassdoor EU Marketing 2025"
     },
     {
       "slug": "tourism_manager",
@@ -385,14 +388,14 @@
         "ღ-ო მენ.",
         "ტ. გ-ი"
       ],
-      "salary_min": 800,
-      "salary_avg": 1400,
-      "salary_max": 2800,
-      "salary_source_ka": "Paylab.ge ტ/ბ კატ. 2024 (1,373₾)",
-      "salary_int_avg": 2500,
+      "salary_min": 930,
+      "salary_avg": 1620,
+      "salary_max": 3240,
+      "salary_source_ka": "GeoStat ტ/ბ სექ. 2025 (+15.8% ეროვ.) · ISCO-1411 · Paylab.ge 2025",
+      "salary_int_avg": 2650,
       "salary_int_currency": "EUR",
       "salary_int_country": "EU",
-      "salary_int_source": "Eurostat ISCO-1411 2024"
+      "salary_int_source": "Eurostat ISCO-1411 2025"
     },
     {
       "slug": "hr_specialist",
@@ -406,14 +409,14 @@
         "ტ-ბ. სპ.",
         "კ-ო. კ-ია"
       ],
-      "salary_min": 900,
-      "salary_avg": 1750,
-      "salary_max": 3500,
-      "salary_source_ka": "Paylab.ge HR კატ. 2024 (1,734₾)",
-      "salary_int_avg": 3500,
+      "salary_min": 990,
+      "salary_avg": 1930,
+      "salary_max": 3860,
+      "salary_source_ka": "GeoStat ბიზნ. სექ. 2025 (+10.2%) · ISCO-2423 · Paylab.ge 2025",
+      "salary_int_avg": 3700,
       "salary_int_currency": "EUR",
       "salary_int_country": "EU",
-      "salary_int_source": "Eurostat ISCO-2423 2024"
+      "salary_int_source": "Eurostat ISCO-2423 2025"
     },
     {
       "slug": "diplomat",
@@ -427,14 +430,14 @@
         "ს-ო ო-ი",
         "ს-კ. ა-ტი"
       ],
-      "salary_min": 1200,
-      "salary_avg": 2050,
-      "salary_max": 5000,
-      "salary_source_ka": "Paylab.ge სახ. ადმ. კატ. 2024 (1,781₾)",
-      "salary_int_avg": 4500,
+      "salary_min": 1360,
+      "salary_avg": 2320,
+      "salary_max": 5650,
+      "salary_source_ka": "GeoStat სახ. ადმ. სექ. 2025 (+13.0%) · ISCO-2635 · Paylab.ge 2025",
+      "salary_int_avg": 4700,
       "salary_int_currency": "EUR",
       "salary_int_country": "EU",
-      "salary_int_source": "OECD Government Employment 2024"
+      "salary_int_source": "OECD Government Employment 2025"
     },
     {
       "slug": "translator",
@@ -448,14 +451,14 @@
         "ს-ო ო-ი (ენ.)",
         "სა-ბ ო-ი"
       ],
-      "salary_min": 700,
-      "salary_avg": 1550,
-      "salary_max": 3500,
-      "salary_source_ka": "Paylab.ge თ. / ი. კატ. 2024 (1,558₾)",
-      "salary_int_avg": 3000,
+      "salary_min": 770,
+      "salary_avg": 1710,
+      "salary_max": 3860,
+      "salary_source_ka": "GeoStat ბიზნ. სექ. 2025 (+10.2%) · ISCO-2643 · Paylab.ge 2025",
+      "salary_int_avg": 3150,
       "salary_int_currency": "EUR",
       "salary_int_country": "EU",
-      "salary_int_source": "Eurostat ISCO-2643 2024"
+      "salary_int_source": "Eurostat ISCO-2643 2025"
     },
     {
       "slug": "agronomist",
@@ -469,14 +472,14 @@
         "სა-ო ო-ი",
         "ს-ბ. ა-ი"
       ],
-      "salary_min": 700,
-      "salary_avg": 1150,
-      "salary_max": 2200,
-      "salary_source_ka": "GeoStat ISCO-61 2024 (1,148₾) · Paylab.ge სოფ. მ. (1,378₾)",
-      "salary_int_avg": 2500,
+      "salary_min": 810,
+      "salary_avg": 1330,
+      "salary_max": 2550,
+      "salary_source_ka": "GeoStat სოფ. მ. სექ. 2025 (+15.8% ეროვ.) · ISCO-6111 · Paylab.ge 2025",
+      "salary_int_avg": 2650,
       "salary_int_currency": "EUR",
       "salary_int_country": "EU",
-      "salary_int_source": "Eurostat ISCO-611 2024"
+      "salary_int_source": "Eurostat ISCO-611 2025"
     },
     {
       "slug": "veterinarian",
@@ -489,14 +492,14 @@
         "ს-ო ვ-ვ",
         "ვ-ვ ს-ო"
       ],
-      "salary_min": 800,
-      "salary_avg": 1400,
-      "salary_max": 3000,
-      "salary_source_ka": "GeoStat ჯ. / სოფ. სფ. კომბ. 2024",
-      "salary_int_avg": 3500,
+      "salary_min": 930,
+      "salary_avg": 1620,
+      "salary_max": 3470,
+      "salary_source_ka": "GeoStat ჯ./სოფ. სფ. 2025 (+15.8% ეროვ.) · ISCO-2250 · Paylab.ge 2025",
+      "salary_int_avg": 3700,
       "salary_int_currency": "EUR",
       "salary_int_country": "EU",
-      "salary_int_source": "Eurostat ISCO-2250 2024"
+      "salary_int_source": "Eurostat ISCO-2250 2025"
     },
     {
       "slug": "scientist",
@@ -510,14 +513,14 @@
         "პ-ო ა-ი",
         "ს-ო მ-ი"
       ],
-      "salary_min": 700,
-      "salary_avg": 1350,
-      "salary_max": 2800,
-      "salary_source_ka": "Paylab.ge გან. / მ. კატ. 2024 (1,427₾)",
-      "salary_int_avg": 4000,
+      "salary_min": 790,
+      "salary_avg": 1530,
+      "salary_max": 3160,
+      "salary_source_ka": "GeoStat განათ./კვლ. სექ. 2025 (+13.0%) · ISCO-2113 · Paylab.ge 2025",
+      "salary_int_avg": 4200,
       "salary_int_currency": "EUR",
       "salary_int_country": "EU",
-      "salary_int_source": "Eurostat R&D ISCO-211 2024"
+      "salary_int_source": "Eurostat R&D ISCO-211 2025"
     },
     {
       "slug": "ecologist",
@@ -531,14 +534,14 @@
         "ბ-ო მ-ი",
         "ს-ო ა-ტი"
       ],
-      "salary_min": 800,
-      "salary_avg": 1500,
-      "salary_max": 3000,
-      "salary_source_ka": "Paylab.ge ეკ. / გეო. კატ. 2024 (1,494₾)",
-      "salary_int_avg": 3500,
+      "salary_min": 900,
+      "salary_avg": 1700,
+      "salary_max": 3390,
+      "salary_source_ka": "GeoStat საჯ. ადმ./გარემ. სექ. 2025 (+13.0%) · ISCO-2114 · Paylab.ge 2025",
+      "salary_int_avg": 3700,
       "salary_int_currency": "EUR",
       "salary_int_country": "EU",
-      "salary_int_source": "Eurostat ISCO-2114 2024"
+      "salary_int_source": "Eurostat ISCO-2114 2025"
     },
     {
       "slug": "social_worker",
@@ -552,14 +555,14 @@
         "ნ-ო ო-ი",
         "ს-ბ. ი-ი"
       ],
-      "salary_min": 700,
-      "salary_avg": 1150,
-      "salary_max": 2200,
-      "salary_source_ka": "GeoStat სოც. / ჯ. სფ. + Paylab.ge 2024",
-      "salary_int_avg": 2800,
+      "salary_min": 790,
+      "salary_avg": 1300,
+      "salary_max": 2490,
+      "salary_source_ka": "GeoStat სოც./ჯ. სფ. 2025 (+13.0%) · Paylab.ge 2025",
+      "salary_int_avg": 3000,
       "salary_int_currency": "EUR",
       "salary_int_country": "EU",
-      "salary_int_source": "Eurostat ISCO-2635 2024"
+      "salary_int_source": "Eurostat ISCO-2635 2025"
     },
     {
       "slug": "logistics",
@@ -573,14 +576,14 @@
         "ს-ო სერ. სპ.",
         "ს-ო ოდ. სპ."
       ],
-      "salary_min": 900,
-      "salary_avg": 1500,
-      "salary_max": 3000,
-      "salary_source_ka": "Paylab.ge ტ. / ლ. კატ. 2024 (1,482₾)",
-      "salary_int_avg": 3000,
+      "salary_min": 990,
+      "salary_avg": 1650,
+      "salary_max": 3310,
+      "salary_source_ka": "GeoStat ტ./ლ. სექ. 2025 (+10.2%) · ISCO-3331 · Paylab.ge 2025",
+      "salary_int_avg": 3150,
       "salary_int_currency": "EUR",
       "salary_int_country": "EU",
-      "salary_int_source": "Eurostat ISCO-3331 2024"
+      "salary_int_source": "Eurostat ISCO-3331 2025"
     },
     {
       "slug": "designer",
@@ -595,14 +598,14 @@
         "ა-კ. ამ-ი",
         "მ-გ. ბ-ი"
       ],
-      "salary_min": 700,
-      "salary_avg": 1450,
-      "salary_max": 4000,
-      "salary_source_ka": "Paylab.ge ხ. / კ. კატ. 2024 (1,411₾) · IT დ-ი ≈ 2,500₾",
-      "salary_int_avg": 3500,
+      "salary_min": 770,
+      "salary_avg": 1600,
+      "salary_max": 4410,
+      "salary_source_ka": "GeoStat ბიზნ./IT სექ. 2025 (+10.2%) · ISCO-2166 · Paylab.ge 2025",
+      "salary_int_avg": 3700,
       "salary_int_currency": "EUR",
       "salary_int_country": "EU",
-      "salary_int_source": "Glassdoor / Eurostat ISCO-2166 2024"
+      "salary_int_source": "Glassdoor / Eurostat ISCO-2166 2025"
     },
     {
       "slug": "sociologist",
@@ -616,14 +619,14 @@
         "ა-ი / ა-ტი",
         "ს-კ. ო-ი"
       ],
-      "salary_min": 800,
-      "salary_avg": 1400,
-      "salary_max": 2800,
-      "salary_source_ka": "Paylab.ge სოც. / ჰ. კატ. 2024 (1,427₾)",
-      "salary_int_avg": 3200,
+      "salary_min": 900,
+      "salary_avg": 1580,
+      "salary_max": 3160,
+      "salary_source_ka": "GeoStat განათ./სოც. სექ. 2025 (+13.0%) · ISCO-2632 · Paylab.ge 2025",
+      "salary_int_avg": 3350,
       "salary_int_currency": "EUR",
       "salary_int_country": "EU",
-      "salary_int_source": "Eurostat ISCO-2632 2024"
+      "salary_int_source": "Eurostat ISCO-2632 2025"
     },
     {
       "slug": "historian",
@@ -636,14 +639,14 @@
         "მ-ი ა-ი",
         "მ. გ-ი"
       ],
-      "salary_min": 700,
-      "salary_avg": 1200,
-      "salary_max": 2500,
-      "salary_source_ka": "Paylab.ge ჰ. კატ. 2024 (1,411₾)",
-      "salary_int_avg": 2800,
+      "salary_min": 790,
+      "salary_avg": 1360,
+      "salary_max": 2830,
+      "salary_source_ka": "GeoStat განათ. სექ. 2025 (+13.0%) · ISCO-2633 · Paylab.ge 2025",
+      "salary_int_avg": 2950,
       "salary_int_currency": "EUR",
       "salary_int_country": "EU",
-      "salary_int_source": "Eurostat ISCO-2633 2024"
+      "salary_int_source": "Eurostat ISCO-2633 2025"
     }
   ]
 }

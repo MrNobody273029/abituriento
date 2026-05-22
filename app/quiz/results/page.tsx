@@ -127,36 +127,56 @@ export default async function QuizResultsPage({
     groupMap.set(p.name_ka, [...arr, p])
   })
 
-  const groups = Array.from(groupMap.entries())
+  const scoredGroups = Array.from(groupMap.entries())
     .map(([name, progs]) => {
-      const field     = progs[0].field
+      const field      = progs[0].field
       const fieldScore = scores[field] ?? 0
-      const md        = marketMap[field]
+      const md         = marketMap[field]
       const demandBonus = (md?.supply_demand_ratio ?? 0) * 20
       const grantBonus  = progs.some(p => p.is_state_funded) ? 12 : 0
       const breadth     = Math.min(progs.length * 1.5, 8)
       const relevance   = fieldScore * 2 + demandBonus + grantBonus + breadth
       const occSlug     = progs[0].occupation_slug
       const occupation  = occSlug ? occupationMap[occSlug] : null
-      return {
-        name,
-        field,
-        degree:    progs[0].degree,
-        hasGrant:  progs.some(p => p.is_state_funded),
-        minFee:    Math.min(...progs.map(p => p.tuition_fee)),
-        maxFee:    Math.max(...progs.map(p => p.tuition_fee)),
-        uniCount:  progs.length,
-        progs:     progs.slice(0, 8),
-        relevance,
-        fieldScore,
-        occupation,
-      }
+      return { name, field, degree: progs[0].degree, relevance, fieldScore, occupation }
     })
     .sort((a, b) => b.relevance - a.relevance)
     .slice(0, 6)
 
+  // Second pass: for the top-6 program names, fetch ALL universities
+  // regardless of field — fixes missing universities (e.g. "ქიმია" at AgriUni is agriculture field)
+  const topNames = scoredGroups.map(g => g.name)
+  const allInstances = await prisma.program.findMany({
+    where: { name_ka: { in: topNames }, university: uniFilter as never },
+    select: {
+      id: true, name_ka: true, tuition_fee: true,
+      is_state_funded: true, min_score_2025: true,
+      occupation_slug: true,
+      university: { select: { id: true, name_ka: true, city: true, type: true, logo_url: true } },
+    },
+    orderBy: [{ is_state_funded: "desc" }, { tuition_fee: "asc" }],
+  })
+
+  const instancesByName = new Map<string, typeof allInstances>()
+  allInstances.forEach(p => {
+    const arr = instancesByName.get(p.name_ka) || []
+    instancesByName.set(p.name_ka, [...arr, p])
+  })
+
+  const groups = scoredGroups.map(g => {
+    const allProgs = instancesByName.get(g.name) || []
+    return {
+      ...g,
+      hasGrant:  allProgs.some(p => p.is_state_funded),
+      minFee:    allProgs.length ? Math.min(...allProgs.map(p => p.tuition_fee)) : 0,
+      maxFee:    allProgs.length ? Math.max(...allProgs.map(p => p.tuition_fee)) : 0,
+      uniCount:  allProgs.length,
+      progs:     allProgs.slice(0, 20),
+    }
+  })
+
   const hasResults = groups.length > 0
-  const maxRel = groups[0]?.relevance || 1
+  const maxRel = scoredGroups[0]?.relevance || 1
 
   return (
     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">

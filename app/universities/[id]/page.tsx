@@ -122,10 +122,12 @@ export default async function UniversityDetailPage({ params }: { params: Promise
                 <BookOpen className="w-4 h-4" />
                 <span>{university.programs.length} სპეციალობა</span>
               </div>
-              <a href={university.website} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 text-sm text-[#1E3A8A] hover:underline cursor-pointer">
-                <ExternalLink className="w-4 h-4" />
-                ვებსაიტი
-              </a>
+              {university.website && !university.website.includes("abituri.ge") && (
+                <a href={university.website} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 text-sm text-[#1E3A8A] hover:underline cursor-pointer">
+                  <ExternalLink className="w-4 h-4" />
+                  ვებსაიტი
+                </a>
+              )}
             </div>
           </div>
         </div>

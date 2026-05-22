@@ -330,12 +330,14 @@ export default async function ProgramDetailPage({ params }: { params: Promise<{ 
                     პროფილი
                   </Button>
                 </Link>
-                <a href={program.university.website} target="_blank" rel="noopener noreferrer" className="flex-1">
-                  <Button variant="outline" size="sm" className="w-full cursor-pointer transition-all duration-200 hover:scale-105 text-xs gap-1.5">
-                    <ExternalLink className="w-3.5 h-3.5" />
-                    ვებსაიტი
-                  </Button>
-                </a>
+                {program.university.website && !program.university.website.includes("abituri.ge") && (
+                  <a href={program.university.website} target="_blank" rel="noopener noreferrer" className="flex-1">
+                    <Button variant="outline" size="sm" className="w-full cursor-pointer transition-all duration-200 hover:scale-105 text-xs gap-1.5">
+                      <ExternalLink className="w-3.5 h-3.5" />
+                      ვებსაიტი
+                    </Button>
+                  </a>
+                )}
               </div>
             </CardContent>
           </Card>

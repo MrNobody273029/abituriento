@@ -131,6 +131,7 @@ export default function QuizPage() {
   function next() {
     if (step < QUESTIONS.length - 1) {
       setStep(step + 1)
+      window.scrollTo({ top: 0, behavior: "smooth" })
     } else {
       const params = new URLSearchParams()
       Object.entries(answers).forEach(([k, v]) => { if (v.length > 0) params.set(k, v.join(",")) })

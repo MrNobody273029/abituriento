@@ -288,25 +288,6 @@ export default async function ProgramDetailPage({ params }: { params: Promise<{ 
             </Card>
           )}
 
-          {/* Related programs */}
-          {relatedPrograms.length > 0 && (
-            <div>
-              <h2 className="text-lg font-bold text-gray-900 mb-4">სხვა პროგრამები ამ სფეროში</h2>
-              <div className="flex gap-4 overflow-x-auto pb-2">
-                {relatedPrograms.map((rp) => (
-                  <Link
-                    key={rp.id}
-                    href={`/programs/${rp.id}`}
-                    className="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-all duration-200 hover:-translate-y-0.5 p-4 min-w-52 cursor-pointer"
-                  >
-                    <h3 className="font-semibold text-sm text-gray-900 mb-1 line-clamp-2">{rp.name_ka}</h3>
-                    <p className="text-xs text-gray-500 mb-2">{rp.university.name_ka}</p>
-                    <p className="text-sm font-bold text-[#1E3A8A]">{rp.tuition_fee.toLocaleString()} ₾</p>
-                  </Link>
-                ))}
-              </div>
-            </div>
-          )}
         </div>
 
         {/* Sidebar */}
@@ -505,6 +486,26 @@ export default async function ProgramDetailPage({ params }: { params: Promise<{ 
           )}
         </div>
       </div>
+
+      {/* Related programs — page bottom */}
+      {relatedPrograms.length > 0 && (
+        <div className="mt-10">
+          <h2 className="text-lg font-bold text-gray-900 mb-4">სხვა პროგრამები ამ სფეროში</h2>
+          <div className="flex gap-4 overflow-x-auto pb-2">
+            {relatedPrograms.map((rp) => (
+              <Link
+                key={rp.id}
+                href={`/programs/${rp.id}`}
+                className="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-all duration-200 hover:-translate-y-0.5 p-4 min-w-52 cursor-pointer"
+              >
+                <h3 className="font-semibold text-sm text-gray-900 mb-1 line-clamp-2">{rp.name_ka}</h3>
+                <p className="text-xs text-gray-500 mb-2">{rp.university.name_ka}</p>
+                <p className="text-sm font-bold text-[#1E3A8A]">{rp.tuition_fee.toLocaleString()} ₾</p>
+              </Link>
+            ))}
+          </div>
+        </div>
+      )}
     </div>
   )
 }

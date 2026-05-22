@@ -22,8 +22,8 @@ export const dynamic = "force-dynamic"
 import { SITE_URL } from "@/lib/site"
 
 export const metadata = {
-  title: "კვიზის შედეგები — შენთვის რეკომენდებული სპეციალობები",
-  description: "კვიზისა და შრომის ბაზრის ანალიზის საფუძველზე შერჩეული სპეციალობები · GeoStat & NAEC 2025",
+  title: "ქვიზის შედეგები — შენთვის რეკომენდებული სპეციალობები",
+  description: "ქვიზისა და შრომის ბაზრის ანალიზის საფუძველზე შერჩეული სპეციალობები · GeoStat & NAEC 2025",
   alternates: { canonical: `${SITE_URL}/quiz/results` },
 }
 
@@ -111,6 +111,7 @@ export default async function QuizResultsPage({
         tuition_fee: true,
         is_state_funded: true,
         min_score_2025: true,
+        occupation_slug: true,
         university: { select: { id: true, name_ka: true, city: true, type: true, logo_url: true } },
       },
       orderBy: [{ is_state_funded: "desc" }, { tuition_fee: "asc" }],
@@ -118,6 +119,10 @@ export default async function QuizResultsPage({
     }),
     prisma.marketData.findMany({ where: { field: { in: fields } } }) as Promise<MarketRow[]>,
   ])
+
+  const occupationSlugs = [...new Set(programs.map(p => p.occupation_slug).filter((s): s is string => !!s))]
+  const occupations = await prisma.occupationSalary.findMany({ where: { slug: { in: occupationSlugs } } })
+  const occupationMap = Object.fromEntries(occupations.map(o => [o.slug, o]))
 
   const marketMap = Object.fromEntries(marketRows.map(r => [r.field, r]))
 
@@ -134,11 +139,12 @@ export default async function QuizResultsPage({
       const field     = progs[0].field
       const fieldScore = scores[field] ?? 0
       const md        = marketMap[field]
-      // Multi-signal relevance: field match + job market demand + grant + breadth
       const demandBonus = (md?.supply_demand_ratio ?? 0) * 20
       const grantBonus  = progs.some(p => p.is_state_funded) ? 12 : 0
       const breadth     = Math.min(progs.length * 1.5, 8)
       const relevance   = fieldScore * 2 + demandBonus + grantBonus + breadth
+      const occSlug     = progs[0].occupation_slug
+      const occupation  = occSlug ? occupationMap[occSlug] : null
       return {
         name,
         field,
@@ -150,6 +156,7 @@ export default async function QuizResultsPage({
         progs:     progs.slice(0, 8),
         relevance,
         fieldScore,
+        occupation,
       }
     })
     .sort((a, b) => b.relevance - a.relevance)
@@ -165,12 +172,12 @@ export default async function QuizResultsPage({
       <div className="flex items-center justify-between mb-6 flex-wrap gap-3">
         <div>
           <h1 className="text-2xl font-bold text-gray-900">შენთვის რეკომენდებული სპეციალობები</h1>
-          <p className="text-sm text-gray-500 mt-1">კვიზის + შრომის ბაზრის ანალიზის საფუძველზე · GeoStat & jobs.ge 2025</p>
+          <p className="text-sm text-gray-500 mt-1">ქვიზის + შრომის ბაზრის ანალიზის საფუძველზე · GeoStat & jobs.ge 2025</p>
         </div>
         <Link href="/quiz">
           <Button variant="outline" className="gap-2 cursor-pointer">
             <RotateCcw className="w-4 h-4" />
-            კვიზის გამეორება
+            ქვიზის გამეორება
           </Button>
         </Link>
       </div>
@@ -232,7 +239,7 @@ export default async function QuizResultsPage({
           <Link href="/quiz" className="mt-4 inline-block">
             <Button variant="outline" className="gap-2 cursor-pointer mt-4">
               <RotateCcw className="w-4 h-4" />
-              კვიზის გამეორება
+              ქვიზის გამეორება
             </Button>
           </Link>
         </div>
@@ -274,6 +281,18 @@ export default async function QuizResultsPage({
                       </span>
                       <span className="text-gray-400">{g.uniCount} უნივერსიტეტი</span>
                     </div>
+                    {g.occupation && (
+                      <div className="flex items-center gap-3 mt-2 flex-wrap">
+                        <span className="flex items-center gap-1 text-xs font-semibold text-emerald-700 bg-emerald-50 rounded-full px-2 py-0.5">
+                          🇬🇪 {g.occupation.salary_avg.toLocaleString()} ₾/თვე
+                        </span>
+                        {g.occupation.salary_int_avg && (
+                          <span className="flex items-center gap-1 text-xs font-medium text-blue-700 bg-blue-50 rounded-full px-2 py-0.5">
+                            🌍 {g.occupation.salary_int_avg.toLocaleString()} {g.occupation.salary_int_currency}
+                          </span>
+                        )}
+                      </div>
+                    )}
                   </div>
 
                   {/* expandable university list */}

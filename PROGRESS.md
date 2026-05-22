@@ -18,10 +18,11 @@
 | Model | ჩანაწ. | შინაარსი |
 |---|---|---|
 | University | 116 | 56 univ + 60 college |
-| Program | 1078 | სახ., ფაკ., ხარ., ფასი, სფერო, გრანტი, exams (651), scores (537) |
+| Program | 1078 | სახ., ფაკ., ხარ., ფასი, სფერო, გრანტი, exams (651), scores (537), occupation_slug (968) |
 | MarketData | 8 | GeoStat სფერო — ჩარიცხვა/კურსდამთ./ხელფ./ვაკ./ratio |
 | GrantThreshold | 12 | NAEC 2025 — 9 საგ. × 3 დონე |
 | ProfessionSalary | 21 | GeoStat ISCO-08 — 2021 × 1.511 → 2024 est. |
+| OccupationSalary | 30 | 30 პროფესია — GeoStat/Paylab 2024, ISCO კოდი, 🇬🇪+🌍 ხელფასი |
 
 ---
 
@@ -35,16 +36,26 @@
 - [x] NAEC ჩარიცხულთა სია → admitted/score stats (537 prog with min_score_2025)
 - [x] NAEC cnobari 2025 PDF (929 გვ.) → exams JSON (651 prog)
 - [x] `grant_score_2025` — 537 prog seeded (round(min_score_2025))
+- [x] **OccupationSalary** — 30 პროფ. → DB (`seed_occupations.ts`)
+  - GeoStat ISCO-08 2024 + Paylab.ge 2024 წყაროები
+  - 🇬🇪 min/avg/max ₾/თვე + 🌍 int_avg (EUR/USD) ყველასთვის
+- [x] **Program.occupation_slug** — 968/1078 mapped (`map_program_occupations.ts`)
+  - 110 unmapped: ენის მომზ., vocational edge cases (შედუღება, სარესტ. მომ. etc.)
 
 ### UI / Features
 - [x] Home, Fields, Programs, Universities, Quiz, Grant კალკ., 404, error, loading
-- [x] Quiz v2: 7 კითხვა multi-select → `/quiz/results` server component
+- [x] ქვიზი v2: 7 კითხვა multi-select → `/quiz/results` server component
   - field scoring (`lib/quiz-match.ts`)
   - DB query + group by name_ka + university dropdown (`<details>`)
   - top-3 field market summary (ხელფასი, ვაკ., demand badge)
   - min_score ჩანს university dropdown-ში
+  - **🇬🇪 salary_avg + 🌍 salary_int_avg badge — ყველა program card-ზე** ✅ (2025-05-22)
 - [x] Programs: search + 2-col + smart pagination (ellipsis) + sort (ანბ. / ფასი / ჩარიცხ. ქულა)
   - ბარიერის ქულა card-ზე ნაჩვენები (537 prog)
+- [x] **Program detail sidebar — "კარიერა და ხელფასი" card** ✅ (2025-05-22)
+  - 🇬🇪 min/avg/max ₾/თვე (GeoStat/Paylab წყარო)
+  - 🌍 int salary (EUR/USD, country, source)
+  - პოზიციების სია (5 tag)
 - [x] Real logos: universities list, university detail, program cards (96/116)
 - [x] University/college გამოყოფა — home, universities, programs, quiz results
 
@@ -70,6 +81,7 @@
 - [x] naec.ge URL footer-ში (was naec.gov.ge)
 - [x] Footer © სიმბოლო
 - [x] თავსუმბათო გვერდზე ბმული (ყველა ადგილი)
+- [x] **"კვიზი" → "ქვიზი"** ყველა ფაილში (layout, results, page.tsx) ✅ (2025-05-22)
 
 ---
 
@@ -80,13 +92,23 @@
 - დაამატე `app/layout.tsx`-ში `metadata` ობიექტში: `verification: { google: "ᲨᲔᲜᲘ_ᲙᲝᲓᲘ" }`
 - შემდეგ GSC-ში დაამატე sitemap: `https://www.abituriento.ge/sitemap.xml`
 
+### [2] 💰 OccupationSalary — მომავალი გაუმჯობესება
+- **2025 მონაცემების განახლება**: GeoStat-ი 2024-ის სრულ წლიურ მონაცემებს 2025 Q1-ში აქვეყნებს
+  - ამჟამინდელი: GeoStat ISCO-08 2024 (Paylab.ge 2024)
+  - განახლება: GeoStat ოფ. 2024 ან Q1/2025 quarterly data ხელმისაწვდომობისას
+- 110 unmapped prog-ის დამატება (vocational + edge cases)
+- `hr_specialist` ≈ 0 match — patterns გაძლიერება საჭიროა
+
 ---
 
 ## 📁 ძირითადი ფაილები
 
 | ფაილი | შინაარსი |
 |---|---|
-| `prisma/schema.prisma` | University, Program, MarketData, GrantThreshold, ProfessionSalary |
+| `prisma/schema.prisma` | University, Program, MarketData, GrantThreshold, ProfessionSalary, **OccupationSalary** |
+| `data_structured/occupations_salary.json` | 30 პროფ. — slug, name_ka/en, isco_code, positions_ka, 🇬🇪+🌍 salary, sources |
+| `scripts/seed_occupations.ts` | occupations_salary.json → OccupationSalary DB |
+| `scripts/map_program_occupations.ts` | Program.name_ka pattern match → occupation_slug |
 | `lib/quiz-match.ts` | field scoring — interests/workstyle/strengths/goals → GeoStat |
 | `lib/site.ts` | SITE_URL, SITE_NAME constants |
 | `components/JsonLd.tsx` | JSON-LD structured data component |
@@ -118,6 +140,8 @@ npx tsx scripts/seed_isco_wages.ts
 npx tsx scripts/seed_program_grant_stats.ts
 npx tsx scripts/seed_grant_scores.ts
 npx tsx scripts/update_supply_demand.ts
+npx tsx scripts/seed_occupations.ts        # 30 occupation → DB
+npx tsx scripts/map_program_occupations.ts # 968/1078 programs → occupation_slug
 python scripts/parse_cnobari_exams.py
 python scripts/parse_isco_wages.py
 ```
@@ -136,3 +160,40 @@ python scripts/parse_isco_wages.py
 | `health` | ჯანდაც. | 0.13 🔴 |
 | `humanities` | ჰუმანიტ. | 0.01 🔴 |
 | `agriculture` | სოფ. მეურნ. | N/A |
+
+---
+
+## 📊 OccupationSalary — 30 პროფ. (GeoStat/Paylab 2024)
+
+| slug | 🇬🇪 საშ. ₾/თვე | 🌍 int (EUR/USD) |
+|---|---|---|
+| programmer | 2,850 | 5,500 USD |
+| dentist | 4,200 | 6,500 EUR |
+| doctor | 2,600 | 6,000 EUR |
+| lawyer | 2,150 | 4,500 EUR |
+| business_manager | 2,700 | 5,000 EUR |
+| civil_engineer | 2,050 | 3,800 EUR |
+| diplomat | 2,050 | 4,500 EUR |
+| architect | 1,850 | 4,000 EUR |
+| hr_specialist | 1,750 | 3,500 EUR |
+| mechanical_engineer | 1,750 | 3,600 EUR |
+| economist | 1,800 | 4,000 EUR |
+| electrical_engineer | 1,800 | 3,800 EUR |
+| marketing_specialist | 1,700 | 3,500 EUR |
+| psychologist | 1,600 | 3,500 EUR |
+| accountant | 1,550 | 3,200 EUR |
+| translator | 1,550 | 3,000 EUR |
+| ecologist | 1,500 | 3,500 EUR |
+| logistics | 1,500 | 3,000 EUR |
+| pharmacist | 1,900 | 4,200 EUR |
+| teacher | 1,450 | 3,000 EUR |
+| journalist | 1,450 | 2,800 EUR |
+| designer | 1,450 | 3,500 EUR |
+| tourism_manager | 1,400 | 2,500 EUR |
+| veterinarian | 1,400 | 3,500 EUR |
+| sociologist | 1,400 | 3,200 EUR |
+| scientist | 1,350 | 4,000 EUR |
+| nurse | 1,300 | 2,800 EUR |
+| historian | 1,200 | 2,800 EUR |
+| social_worker | 1,150 | 2,800 EUR |
+| agronomist | 1,150 | 2,500 EUR |

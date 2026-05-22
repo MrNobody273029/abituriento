@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation"
 import Link from "next/link"
-import { ChevronRight, ExternalLink, Building2, Clock, Banknote, CheckCircle, XCircle, Calculator, Users, TrendingUp, TrendingDown, Minus, BookOpen } from "lucide-react"
+import { ChevronRight, ExternalLink, Building2, Clock, Banknote, CheckCircle, XCircle, Calculator, Users, TrendingUp, TrendingDown, Minus, BookOpen, Briefcase } from "lucide-react"
 import { prisma } from "@/lib/prisma"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
@@ -42,7 +42,7 @@ export default async function ProgramDetailPage({ params }: { params: Promise<{ 
   const { id } = await params
   const program = await prisma.program.findUnique({
     where: { id },
-    include: { university: true },
+    include: { university: true, occupation: true },
   })
 
   if (!program) notFound()
@@ -399,6 +399,70 @@ export default async function ProgramDetailPage({ params }: { params: Promise<{ 
               )}
             </CardContent>
           </Card>
+
+          {/* Occupation salary */}
+          {program.occupation && (() => {
+            const occ = program.occupation!
+            const positions = Array.isArray(occ.positions_ka) ? occ.positions_ka as string[] : []
+            return (
+              <Card className="border-gray-100 shadow-sm">
+                <CardHeader className="pb-3">
+                  <CardTitle className="text-base flex items-center gap-2">
+                    <Briefcase className="w-4 h-4 text-[#1E3A8A]" />
+                    კარიერა და ხელფასი
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-4">
+                  <p className="text-sm font-semibold text-gray-900">{occ.name_ka}</p>
+
+                  {/* Georgia salary */}
+                  <div>
+                    <p className="text-[11px] font-semibold text-gray-400 uppercase tracking-wide mb-2">🇬🇪 საქართველო · {occ.year}</p>
+                    <div className="grid grid-cols-3 gap-1.5 text-center mb-1.5">
+                      <div className="bg-gray-50 rounded-lg p-2">
+                        <p className="text-[10px] text-gray-400">მინ.</p>
+                        <p className="font-bold text-sm text-gray-700">{occ.salary_min.toLocaleString()}</p>
+                      </div>
+                      <div className="bg-blue-50 rounded-lg p-2 border border-blue-100">
+                        <p className="text-[10px] text-blue-500">საშ.</p>
+                        <p className="font-bold text-sm text-blue-800">{occ.salary_avg.toLocaleString()}</p>
+                      </div>
+                      <div className="bg-gray-50 rounded-lg p-2">
+                        <p className="text-[10px] text-gray-400">მაქს.</p>
+                        <p className="font-bold text-sm text-gray-700">{occ.salary_max.toLocaleString()}</p>
+                      </div>
+                    </div>
+                    <p className="text-[10px] text-gray-400">₾/თვე · {occ.salary_source_ka}</p>
+                  </div>
+
+                  {/* International salary */}
+                  {occ.salary_int_avg && (
+                    <div className="border-t border-gray-100 pt-3">
+                      <p className="text-[11px] font-semibold text-gray-400 uppercase tracking-wide mb-2">🌍 {occ.salary_int_country}</p>
+                      <p className="text-lg font-bold text-gray-900">
+                        {occ.salary_int_avg.toLocaleString()} <span className="text-sm font-medium text-gray-500">{occ.salary_int_currency}/თვე</span>
+                      </p>
+                      {occ.salary_int_source && (
+                        <p className="text-[10px] text-gray-400 mt-0.5">{occ.salary_int_source}</p>
+                      )}
+                    </div>
+                  )}
+
+                  {/* Positions */}
+                  {positions.length > 0 && (
+                    <div className="border-t border-gray-100 pt-3">
+                      <p className="text-[11px] font-semibold text-gray-400 uppercase tracking-wide mb-2">პოზიციები</p>
+                      <div className="flex flex-wrap gap-1.5">
+                        {positions.slice(0, 5).map((pos, i) => (
+                          <span key={i} className="text-[11px] bg-gray-100 text-gray-600 rounded-full px-2 py-0.5">{pos}</span>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+                </CardContent>
+              </Card>
+            )
+          })()}
 
           {/* Market data */}
           {marketData && (

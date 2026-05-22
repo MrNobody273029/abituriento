@@ -52,7 +52,29 @@ model Program {
   grant_50_count_2025  Int?
   grant_70_count_2025  Int?
   grant_100_count_2025 Int?
+  // Occupation / salary link
+  occupation_slug  String?
+  occupation       OccupationSalary? @relation(fields: [occupation_slug], references: [slug])
   university       University @relation(fields: [universityId], references: [id])
+}
+
+model OccupationSalary {
+  id                   String    @id @default(cuid())
+  slug                 String    @unique
+  name_ka              String
+  name_en              String
+  isco_code            String?
+  positions_ka         Json
+  salary_min           Int
+  salary_avg           Int
+  salary_max           Int
+  salary_source_ka     String
+  salary_int_avg       Int?
+  salary_int_currency  String?
+  salary_int_country   String?
+  salary_int_source    String?
+  year                 Int       @default(2024)
+  programs             Program[]
 }
 
 model GrantThreshold {

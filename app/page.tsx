@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     description: "116 უნივერსიტეტი · 1000+ სპეციალობა · გრანტის ქულები · შრომის ბაზარი 2025",
   },
 }
-import { ArrowRight, BookOpen, Building2, Layers, TrendingUp, TrendingDown, Minus, Search, BarChart3, Star, Users } from "lucide-react"
+import { ArrowRight, BookOpen, Building2, Layers, TrendingUp, TrendingDown, Minus, Search, BarChart3, Users } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { prisma } from "@/lib/prisma"
 import { TREND_LABELS } from "@/lib/constants"
@@ -127,11 +127,7 @@ export default async function HomePage() {
       <JsonLd data={faqSchema} />
       <section className="bg-gradient-to-br from-[#1E3A8A] via-[#2563EB] to-[#4F46E5] text-white py-24 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur rounded-full px-4 py-2 text-sm mb-8 border border-white/20">
-            <Star className="w-4 h-4 text-yellow-300" />
-            <span>{stats.programCount}+ სპეციალობა · {stats.uniCount} უნივერსიტეტი + {stats.collegeCount} კოლეჯი · GeoStat 2025</span>
-          </div>
-          <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+<h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
             აირჩიე შენი გზა
           </h1>
           <p className="text-xl text-blue-100 mb-10 max-w-2xl mx-auto leading-relaxed">

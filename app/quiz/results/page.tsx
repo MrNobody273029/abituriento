@@ -256,9 +256,11 @@ export default async function QuizResultsPage({
                     <div className="flex items-center gap-3 text-xs text-gray-500">
                       <span className="flex items-center gap-1">
                         <Banknote className="w-3.5 h-3.5" />
-                        {g.minFee === g.maxFee
+                        {g.minFee === 0 && g.maxFee === 0
+                          ? "ფასი მიუთითებელია"
+                          : g.minFee === g.maxFee
                           ? `${g.minFee.toLocaleString()} ₾/წელი`
-                          : `${g.minFee.toLocaleString()} – ${g.maxFee.toLocaleString()} ₾/წელი`}
+                          : `${(g.minFee || g.maxFee).toLocaleString()} – ${g.maxFee.toLocaleString()} ₾/წელი`}
                       </span>
                       <span className="text-gray-400">{g.uniCount} უნივერსიტეტი</span>
                     </div>
@@ -307,9 +309,9 @@ export default async function QuizResultsPage({
                           </div>
                           <div className="text-right shrink-0">
                             <p className="text-xs font-bold text-[#1E3A8A]">
-                              {p.is_state_funded ? "0 ₾" : `${p.tuition_fee.toLocaleString()} ₾`}
+                              {p.is_state_funded ? "0 ₾" : p.tuition_fee > 0 ? `${p.tuition_fee.toLocaleString()} ₾` : "—"}
                             </p>
-                            {p.is_state_funded && (
+                            {p.is_state_funded && p.tuition_fee > 0 && (
                               <p className="text-[9px] text-gray-400">{p.tuition_fee.toLocaleString()} სრული</p>
                             )}
                             {p.min_score_2025 != null && (

@@ -159,7 +159,7 @@ export default async function UniversityDetailPage({ params }: { params: Promise
                     <Badge variant="outline" className="text-xs shrink-0">{DEGREE_LABELS[program.degree]}</Badge>
                   </div>
                   <div className="flex items-center justify-between">
-                    <span className="text-sm font-bold" style={{ color: fieldAccent }}>{program.tuition_fee.toLocaleString()} ₾</span>
+                    <span className="text-sm font-bold" style={{ color: fieldAccent }}>{program.tuition_fee > 0 ? `${program.tuition_fee.toLocaleString()} ₾` : "—"}</span>
                     <div className="flex items-center gap-1 text-xs text-gray-500">
                       <span>გრანტი: {program.grant_score_2025 ?? "—"}</span>
                       <ArrowRight className="w-3 h-3" />

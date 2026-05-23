@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation"
 import Link from "next/link"
-import { ChevronRight, ExternalLink, Building2, Clock, Banknote, CheckCircle, XCircle, Calculator, Users, TrendingUp, TrendingDown, Minus, BookOpen, Briefcase } from "lucide-react"
+import { ChevronRight, ExternalLink, Building2, Clock, Banknote, CheckCircle, XCircle, Calculator, Users, TrendingUp, TrendingDown, Minus, BookOpen, Briefcase, GraduationCap, FileText, Download } from "lucide-react"
 import { prisma } from "@/lib/prisma"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
@@ -29,7 +29,7 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
   const title = `${program.name_ka} — ${program.university.name_ka}`
   const description =
     program.description_ka ||
-    `${program.name_ka} სპეციალობა ${program.university.name_ka}-ში. სწავლის ფასი: ${program.tuition_fee.toLocaleString()} ₾/წელი${program.is_state_funded ? ", სახელმწიფო გრანტი ხელმისაწვდომია." : "."}`
+    `${program.name_ka} სპეციალობა ${program.university.name_ka}-ში.${program.tuition_fee > 0 ? ` სწავლის ფასი: ${program.tuition_fee.toLocaleString()} ₾/წელი` : ""}${program.is_state_funded ? " სახელმწიფო გრანტი ხელმისაწვდომია." : "."}`
   return {
     title,
     description,
@@ -131,16 +131,16 @@ export default async function ProgramDetailPage({ params }: { params: Promise<{ 
                 <p className="text-gray-600 mt-4 leading-relaxed">{program.description_ka}</p>
               )}
 
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
+              <div className="grid grid-cols-2 md:grid-cols-5 gap-3 mt-6">
                 <div className="bg-gray-50 rounded-xl p-3 text-center">
                   <Banknote className="w-5 h-5 text-[#1E3A8A] mx-auto mb-1" />
-                  <div className="font-bold text-gray-900 text-lg">{program.tuition_fee.toLocaleString()}</div>
-                  <div className="text-xs text-gray-500">₾/წელი</div>
+                  <div className="font-bold text-gray-900 text-lg">{program.tuition_fee > 0 ? program.tuition_fee.toLocaleString() : "—"}</div>
+                  <div className="text-xs text-gray-500">{program.tuition_fee > 0 ? "₾/წელი" : "მიუთითებელია"}</div>
                 </div>
                 <div className="bg-gray-50 rounded-xl p-3 text-center">
                   <Clock className="w-5 h-5 text-[#F97316] mx-auto mb-1" />
                   <div className="font-bold text-gray-900 text-lg">{program.duration_years}</div>
-                  <div className="text-xs text-gray-500">წელი</div>
+                  <div className="text-xs text-gray-500">სწავლის ხანგრძლ.</div>
                 </div>
                 <div className={`rounded-xl p-3 text-center ${program.is_state_funded ? "bg-green-50" : "bg-gray-50"}`}>
                   {program.is_state_funded
@@ -149,8 +149,21 @@ export default async function ProgramDetailPage({ params }: { params: Promise<{ 
                   <div className={`font-bold text-sm ${program.is_state_funded ? "text-green-700" : "text-gray-400"}`}>
                     {program.is_state_funded ? "ხელმისაწვდომი" : "ხელმიუწვდომი"}
                   </div>
-                  <div className="text-xs text-gray-500">სახელმწიფო გრანტი</div>
+                  <div className="text-xs text-gray-500">სახ. გრანტი</div>
                 </div>
+                {program.seats_2026 ? (
+                  <div className="bg-blue-50 rounded-xl p-3 text-center">
+                    <GraduationCap className="w-5 h-5 text-blue-600 mx-auto mb-1" />
+                    <div className="font-bold text-blue-700 text-lg">{program.seats_2026}</div>
+                    <div className="text-xs text-gray-500">ადგილი 2026</div>
+                  </div>
+                ) : (
+                  <div className="bg-gray-50 rounded-xl p-3 text-center">
+                    <GraduationCap className="w-5 h-5 text-gray-300 mx-auto mb-1" />
+                    <div className="font-bold text-gray-300 text-lg">—</div>
+                    <div className="text-xs text-gray-400">ადგილი 2026</div>
+                  </div>
+                )}
                 <div className="bg-gray-50 rounded-xl p-3 text-center">
                   <Building2 className="w-5 h-5 text-purple-500 mx-auto mb-1" />
                   <div className="font-bold text-gray-900 text-sm leading-tight">{TYPE_LABELS[program.university.type]}</div>
@@ -322,6 +335,41 @@ export default async function ProgramDetailPage({ params }: { params: Promise<{ 
               </div>
             </CardContent>
           </Card>
+
+          {/* NAEC 2026 info */}
+          {(program.naec_code || program.seats_2026) && (
+            <Card className="border-blue-100 bg-blue-50/30 shadow-sm">
+              <CardHeader className="pb-3">
+                <CardTitle className="text-base flex items-center gap-2">
+                  <FileText className="w-4 h-4 text-blue-600" />
+                  ცნობარი 2026
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-3">
+                {program.naec_code && (
+                  <div className="flex items-center justify-between">
+                    <span className="text-xs text-gray-500">NAEC კოდი</span>
+                    <span className="font-mono text-sm font-bold text-blue-800 bg-blue-100 px-2 py-0.5 rounded">{program.naec_code}</span>
+                  </div>
+                )}
+                {program.seats_2026 && (
+                  <div className="flex items-center justify-between">
+                    <span className="text-xs text-gray-500">მისაღები ადგილები</span>
+                    <span className="text-sm font-bold text-blue-800">{program.seats_2026} ადგ.</span>
+                  </div>
+                )}
+                <a
+                  href="/cnobari_2026.pdf"
+                  download="ცნობარი_2026.pdf"
+                  className="flex items-center justify-center gap-2 w-full rounded-lg border border-blue-200 bg-white px-3 py-2 text-sm font-medium text-blue-700 transition-colors hover:bg-blue-50"
+                >
+                  <Download className="w-3.5 h-3.5" />
+                  ჩამოტვირთე ცნობარი PDF
+                </a>
+                <p className="text-[10px] text-gray-400">წყარო: NAEC ოფიციალური ცნობარი · 2026</p>
+              </CardContent>
+            </Card>
+          )}
 
           {/* Grant info */}
           <Card className={`shadow-sm ${program.is_state_funded ? "border-green-200 bg-green-50/40" : "border-gray-100"}`}>
@@ -500,7 +548,7 @@ export default async function ProgramDetailPage({ params }: { params: Promise<{ 
               >
                 <h3 className="font-semibold text-sm text-gray-900 mb-1 line-clamp-2">{rp.name_ka}</h3>
                 <p className="text-xs text-gray-500 mb-2">{rp.university.name_ka}</p>
-                <p className="text-sm font-bold text-[#1E3A8A]">{rp.tuition_fee.toLocaleString()} ₾</p>
+                <p className="text-sm font-bold text-[#1E3A8A]">{rp.tuition_fee > 0 ? `${rp.tuition_fee.toLocaleString()} ₾` : "—"}</p>
               </Link>
             ))}
           </div>

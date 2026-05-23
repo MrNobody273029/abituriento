@@ -3,7 +3,7 @@
 import { useState } from "react"
 import Link from "next/link"
 import { useRouter } from "next/navigation"
-import { ArrowRight, Filter, ChevronLeft, ChevronRight, Building2, Search, X, SlidersHorizontal } from "lucide-react"
+import { ArrowRight, Filter, ChevronLeft, ChevronRight, Building2, Search, X, SlidersHorizontal, Download } from "lucide-react"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Checkbox } from "@/components/ui/checkbox"
@@ -34,6 +34,7 @@ type Program = {
   is_state_funded: boolean
   grant_score_2025: number | null
   grant_score_2024: number | null
+  seats_2026: number | null
   field: string
   university: { id: string; name_ka: string; type: string; logo_url: string | null }
 }
@@ -184,7 +185,9 @@ export default function ProgramsClient({
             >
               <SelectTrigger className="w-48 cursor-pointer h-9 text-sm bg-white">
                 <SlidersHorizontal className="w-3.5 h-3.5 text-gray-400 mr-1" />
-                <SelectValue placeholder="დალაგება" />
+                <span className="flex-1 text-left truncate">
+                  {({ alpha: "ანბანური", price_asc: "ფასი ↑", price_desc: "ფასი ↓", score_desc: "ჩარიცხვის ქულა ↓" } as Record<string, string>)[currentParams.sort || "alpha"] ?? "დალაგება"}
+                </span>
               </SelectTrigger>
               <SelectContent>
                 <SelectItem value="alpha" className="cursor-pointer">ანბანური</SelectItem>
@@ -193,6 +196,15 @@ export default function ProgramsClient({
                 <SelectItem value="score_desc" className="cursor-pointer">ჩარიცხვის ქულა ↓</SelectItem>
               </SelectContent>
             </Select>
+
+            <a
+              href="/cnobari_2026.pdf"
+              download="ცნობარი_2026.pdf"
+              className="inline-flex items-center gap-1.5 rounded-lg border border-gray-200 bg-white px-3 py-2 text-sm font-medium text-gray-600 transition-colors hover:bg-gray-50 hover:text-gray-900 h-9"
+            >
+              <Download className="w-3.5 h-3.5" />
+              <span className="hidden sm:inline">ცნობარი 2026</span>
+            </a>
 
             <Sheet>
               <SheetTrigger className="md:hidden inline-flex items-center justify-center gap-2 rounded-lg border border-gray-200 bg-white px-3 py-2 text-sm font-medium transition-colors hover:bg-gray-50 cursor-pointer h-9">
@@ -319,13 +331,20 @@ export default function ProgramsClient({
                     <div className="px-4 py-3 border-t border-gray-50 flex items-center justify-between gap-2 bg-gray-50/50">
                       <div className="flex flex-col min-w-0">
                         <span className="text-base font-bold text-gray-900 leading-none">
-                          {program.tuition_fee.toLocaleString()} <span className="text-xs font-medium text-gray-400">₾/წელი</span>
+                          {program.tuition_fee > 0 ? <>{program.tuition_fee.toLocaleString()} <span className="text-xs font-medium text-gray-400">₾/წელი</span></> : <span className="text-xs font-medium text-gray-400">ფასი მიუთითებელია</span>}
                         </span>
-                        {program.grant_score_2025 ? (
-                          <span className="text-[11px] text-amber-600 font-medium mt-0.5">
-                            ბარიერი {program.grant_score_2025.toLocaleString()}
-                          </span>
-                        ) : null}
+                        <div className="flex items-center gap-2 mt-0.5">
+                          {program.grant_score_2025 ? (
+                            <span className="text-[11px] text-amber-600 font-medium">
+                              ბარიერი {program.grant_score_2025.toLocaleString()}
+                            </span>
+                          ) : null}
+                          {program.seats_2026 ? (
+                            <span className="text-[11px] text-blue-600 font-medium">
+                              {program.seats_2026} ადგილი
+                            </span>
+                          ) : null}
+                        </div>
                       </div>
                       <Link href={`/programs/${program.id}`}>
                         <button

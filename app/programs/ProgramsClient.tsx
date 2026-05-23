@@ -331,7 +331,11 @@ export default function ProgramsClient({
                     <div className="px-4 py-3 border-t border-gray-50 flex items-center justify-between gap-2 bg-gray-50/50">
                       <div className="flex flex-col min-w-0">
                         <span className="text-base font-bold text-gray-900 leading-none">
-                          {program.tuition_fee > 0 ? <>{program.tuition_fee.toLocaleString()} <span className="text-xs font-medium text-gray-400">₾/წელი</span></> : <span className="text-xs font-medium text-gray-400">ფასი მიუთითებელია</span>}
+                          {program.tuition_fee > 0
+                            ? <>{program.tuition_fee.toLocaleString()} <span className="text-xs font-medium text-gray-400">₾/წელი</span></>
+                            : program.is_state_funded
+                            ? <span className="text-xs font-medium text-green-600">0 ₾</span>
+                            : <span className="text-xs font-medium text-gray-400">ფასი მიუთითებელია</span>}
                         </span>
                         <div className="flex items-center gap-2 mt-0.5">
                           {program.grant_score_2025 ? (

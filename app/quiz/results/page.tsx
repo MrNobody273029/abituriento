@@ -32,6 +32,7 @@ export const metadata = {
   title: "ქვიზის შედეგები — შენთვის რეკომენდებული სპეციალობები",
   description: "ქვიზისა და შრომის ბაზრის ანალიზის საფუძველზე შერჩეული სპეციალობები · GeoStat & NAEC 2025",
   alternates: { canonical: `${SITE_URL}/quiz/results` },
+  robots: { index: false, follow: false },
 }
 
 type MarketRow = {

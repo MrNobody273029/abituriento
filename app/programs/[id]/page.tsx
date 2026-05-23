@@ -134,8 +134,12 @@ export default async function ProgramDetailPage({ params }: { params: Promise<{ 
               <div className="grid grid-cols-2 md:grid-cols-5 gap-3 mt-6">
                 <div className="bg-gray-50 rounded-xl p-3 text-center">
                   <Banknote className="w-5 h-5 text-[#1E3A8A] mx-auto mb-1" />
-                  <div className="font-bold text-gray-900 text-lg">{program.tuition_fee > 0 ? program.tuition_fee.toLocaleString() : "—"}</div>
-                  <div className="text-xs text-gray-500">{program.tuition_fee > 0 ? "₾/წელი" : "მიუთითებელია"}</div>
+                  <div className="font-bold text-gray-900 text-lg">
+                    {program.tuition_fee > 0 ? program.tuition_fee.toLocaleString() : program.is_state_funded ? "0" : "—"}
+                  </div>
+                  <div className="text-xs text-gray-500">
+                    {program.tuition_fee > 0 ? "₾/წელი" : program.is_state_funded ? "₾/წელი (სახ. გრანტი)" : "ფასი მიუთითებელია"}
+                  </div>
                 </div>
                 <div className="bg-gray-50 rounded-xl p-3 text-center">
                   <Clock className="w-5 h-5 text-[#F97316] mx-auto mb-1" />
@@ -274,7 +278,7 @@ export default async function ProgramDetailPage({ params }: { params: Promise<{ 
                       ].map(({ label, count, color }) => (
                         count ? (
                           <div key={label} className={`rounded-lg border px-2 py-2 ${color}`}>
-                            <p className="text-sm font-bold">{count} სტ-ტი</p>
+                            <p className="text-sm font-bold">{count} სტუდენტი</p>
                             <p className="text-[11px]">{label} გრანტი</p>
                           </div>
                         ) : null

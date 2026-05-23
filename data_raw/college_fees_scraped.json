@@ -1,0 +1,782 @@
+{
+  "saeqtno-ganatleba-tbilisi-2120201": {
+    "name_ka": "საექთნო განათლება (თბილისი)",
+    "institution_slug": "shps-tbilisis-pirveli-sameditsino-sastsavlebeli",
+    "fee": 0
+  },
+  "farmatsia-saftiaqo-tbilisi-2120202": {
+    "name_ka": "ფარმაცია (სააფთიაქო) (თბილისი)",
+    "institution_slug": "shps-tbilisis-pirveli-sameditsino-sastsavlebeli",
+    "fee": 0
+  },
+  "saeqtno-saqme-rustavi-2550201": {
+    "name_ka": "საექთნო საქმე (რუსთავი)",
+    "institution_slug": "shps-arsi",
+    "fee": 0
+  },
+  "farmatsia-saaftiaqo-rustavi-2550202": {
+    "name_ka": "ფარმაცია (სააფთიაქო) (რუსთავი)",
+    "institution_slug": "shps-arsi",
+    "fee": 0
+  },
+  "skolamdeli-aghzrda-tbilisi-2110201": {
+    "name_ka": "სკოლამდელი აღზრდა (თბილისი)",
+    "institution_slug": "shps-interbiznesis-akademia",
+    "fee": 0
+  },
+  "bughaltruli-aghritskhva-tbilisi-2110202": {
+    "name_ka": "ბუღალტრული აღრიცხვა (თბილისი)",
+    "institution_slug": "shps-interbiznesis-akademia",
+    "fee": 0
+  },
+  "front-end-developmenti-tbilisi-2110203": {
+    "name_ka": "Front-end დეველოპმენტი (თბილისი)",
+    "institution_slug": "shps-interbiznesis-akademia",
+    "fee": 0
+  },
+  "saeqtno-saqme-tbilisi-2110204": {
+    "name_ka": "საექთნო საქმე (თბილისი)",
+    "institution_slug": "shps-interbiznesis-akademia",
+    "fee": 0
+  },
+  "farmatsia-saaftiaqo-tbilisi-2110205": {
+    "name_ka": "ფარმაცია (სააფთიაქო) (თბილისი)",
+    "institution_slug": "shps-interbiznesis-akademia",
+    "fee": 0
+  },
+  "aghmzrdeli-tbilisi-3360201": {
+    "name_ka": "აღმზრდელი (თბილისი)",
+    "institution_slug": "sazogadoebrivi-koleji-panatsea",
+    "fee": 0
+  },
+  "saeqtno-saqme-tbilisi-3360202": {
+    "name_ka": "საექთნო საქმე (თბილისი)",
+    "institution_slug": "sazogadoebrivi-koleji-panatsea",
+    "fee": 0
+  },
+  "farmatsia-saaftiaqo-tbilisi-3360203": {
+    "name_ka": "ფარმაცია (სააფთიაქო) (თბილისი)",
+    "institution_slug": "sazogadoebrivi-koleji-panatsea",
+    "fee": 0
+  },
+  "saeqtno-saqme-tbilisi-3390201": {
+    "name_ka": "საექთნო საქმე (თბილისი)",
+    "institution_slug": "davit-tvildianis-sakhelobis-sameditsino-universitetis-sazogadoebrivi-saeqtno-koleji",
+    "fee": 0
+  },
+  "aghmzrdeli-tbilisi-3540201": {
+    "name_ka": "აღმზრდელი (თბილისი)",
+    "institution_slug": "shps-tavisufali-khedvis-akademia",
+    "fee": 0
+  },
+  "bughaltruli-aghritskhva-tbilisi-3540202": {
+    "name_ka": "ბუღალტრული აღრიცხვა (თბილისი)",
+    "institution_slug": "shps-tavisufali-khedvis-akademia",
+    "fee": 0
+  },
+  "grafikuli-dizaini-qutaisi-2390201": {
+    "name_ka": "გრაფიკული დიზაინი (ქუთაისი)",
+    "institution_slug": "koleji-iberia",
+    "fee": 0
+  },
+  "bughaltruli-aghritskhva-qutaisi-2390202": {
+    "name_ka": "ბუღალტრული აღრიცხვა (ქუთაისი)",
+    "institution_slug": "koleji-iberia",
+    "fee": 0
+  },
+  "bughaltruli-aghritskhva-baghdati-2390203": {
+    "name_ka": "ბუღალტრული აღრიცხვა (ბაღდათი)",
+    "institution_slug": "koleji-iberia",
+    "fee": 0
+  },
+  "kompiuteruli-qseli-da-sistemebi-qutaisi-2390204": {
+    "name_ka": "კომპიუტერული ქსელი და სისტემები (ქუთაისი)",
+    "institution_slug": "koleji-iberia",
+    "fee": 0
+  },
+  "modis-teqnologia-da-dizaini-baghdati-2390205": {
+    "name_ka": "მოდის ტექნოლოგია და დიზაინი (ბაღდათი)",
+    "institution_slug": "koleji-iberia",
+    "fee": 0
+  },
+  "modis-teqnologia-da-dizaini-qutaisi-2390206": {
+    "name_ka": "მოდის ტექნოლოგია და დიზაინი (ქუთაისი)",
+    "institution_slug": "koleji-iberia",
+    "fee": 0
+  },
+  "sastumro-momsakhureba-qutaisi-2390207": {
+    "name_ka": "სასტუმრო მომსახურება (ქუთაისი)",
+    "institution_slug": "koleji-iberia",
+    "fee": 0
+  },
+  "sarestorno-momsakhureba-qutaisi-2390208": {
+    "name_ka": "სარესტორნო მომსახურება (ქუთაისი)",
+    "institution_slug": "koleji-iberia",
+    "fee": 0
+  },
+  "saertashoriso-saavtomobilo-gadazidvebi-qutaisi-2390209": {
+    "name_ka": "საერთაშორისო საავტომობილო გადაზიდვები (ქუთაისი)",
+    "institution_slug": "koleji-iberia",
+    "fee": 0
+  },
+  "aghmzrdeli-marneuli-2890201": {
+    "name_ka": "აღმზრდელი (მარნეული)",
+    "institution_slug": "shps-marneulis-koleji",
+    "fee": 0
+  },
+  "saeqtno-ganatleba-marneuli-2890202": {
+    "name_ka": "საექთნო განათლება (მარნეული)",
+    "institution_slug": "shps-marneulis-koleji",
+    "fee": 0
+  },
+  "masazhis-terapia-marneuli-2890203": {
+    "name_ka": "მასაჟის თერაპია (მარნეული)",
+    "institution_slug": "shps-marneulis-koleji",
+    "fee": 0
+  },
+  "farmatsia-saaftiaqo-marneuli-2890204": {
+    "name_ka": "ფარმაცია (სააფთიაქო) (მარნეული)",
+    "institution_slug": "shps-marneulis-koleji",
+    "fee": 0
+  },
+  "front-end-developmenti-batumi-3480201": {
+    "name_ka": "Front-end დეველოპმენტი (ბათუმი)",
+    "institution_slug": "teneqsi",
+    "fee": 0
+  },
+  "aghmzrdeli-batumi-3220201": {
+    "name_ka": "აღმზრდელი (ბათუმი)",
+    "institution_slug": "batumis-sazogadoebrivi-akademia-bpa",
+    "fee": 0
+  },
+  "bughaltruli-aghritskhva-batumi-3220202": {
+    "name_ka": "ბუღალტრული აღრიცხვა (ბათუმი)",
+    "institution_slug": "batumis-sazogadoebrivi-akademia-bpa",
+    "fee": 0
+  },
+  "saeqtno-ganatleba-batumi-3220203": {
+    "name_ka": "საექთნო განათლება (ბათუმი)",
+    "institution_slug": "batumis-sazogadoebrivi-akademia-bpa",
+    "fee": 0
+  },
+  "farmatsia-saaftiaqo-batumi-3220204": {
+    "name_ka": "ფარმაცია (სააფთიაქო) (ბათუმი)",
+    "institution_slug": "batumis-sazogadoebrivi-akademia-bpa",
+    "fee": 0
+  },
+  "tvirtebis-eqspedireba-tbilisi-3380201": {
+    "name_ka": "ტვირთების ექსპედირება (თბილისი)",
+    "institution_slug": "sarkinigzo-transportis-koleji",
+    "fee": 0
+  },
+  "satsyobis-operireba-tbilisi-3380202": {
+    "name_ka": "საწყობის ოპერირება (თბილისი)",
+    "institution_slug": "sarkinigzo-transportis-koleji",
+    "fee": 0
+  },
+  "shromis-usafrtkhoebisa-da-garemosdatsviti-teqnologiebi-tbilisi-3380203": {
+    "name_ka": "შრომის უსაფრთხოებისა და გარემოსდაცვითი ტექნოლოგიები (თბილისი)",
+    "institution_slug": "sarkinigzo-transportis-koleji",
+    "fee": 0
+  },
+  "shedugheba-tbilisi-3380204": {
+    "name_ka": "შედუღება (თბილისი)",
+    "institution_slug": "sarkinigzo-transportis-koleji",
+    "fee": 0
+  },
+  "lokomotivis-martva-tbilisi-3380205": {
+    "name_ka": "ლოკომოტივის მართვა (თბილისი)",
+    "institution_slug": "sarkinigzo-transportis-koleji",
+    "fee": 0
+  },
+  "farmatsia-saaftiaqo-zugdidi-2660201": {
+    "name_ka": "ფარმაცია (სააფთიაქო) (ზუგდიდი)",
+    "institution_slug": "shps-tskhum-egrisi",
+    "fee": 0
+  },
+  "kompiuteruli-qseli-da-sistemebi-qutaisi-2450202": {
+    "name_ka": "კომპიუტერული ქსელი და სისტემები (ქუთაისი)",
+    "institution_slug": "qartul-amerikuli-saertashoriso-skola-progresi",
+    "fee": 0
+  },
+  "saeqtno-saqme-qutaisi-2430201": {
+    "name_ka": "საექთნო საქმე (ქუთაისი)",
+    "institution_slug": "shps-sio",
+    "fee": 0
+  },
+  "masazhis-terapia-qutaisi-2430202": {
+    "name_ka": "მასაჟის თერაპია (ქუთაისი)",
+    "institution_slug": "shps-sio",
+    "fee": 0
+  },
+  "saeqtno-saqme-tbilisi-2220201": {
+    "name_ka": "საექთნო საქმე (თბილისი)",
+    "institution_slug": "shps-baraqoni",
+    "fee": 0
+  },
+  "farmatsia-saaftiaqo-tbilisi-2220202": {
+    "name_ka": "ფარმაცია (სააფთიაქო) (თბილისი)",
+    "institution_slug": "shps-baraqoni",
+    "fee": 0
+  },
+  "skolamdeli-ganatleba-tbilisi-3490201": {
+    "name_ka": "სკოლამდელი განათლება (თბილისი)",
+    "institution_slug": "saqartvelos-biznesis-akademia-sba",
+    "fee": 0
+  },
+  "logistika-tbilisi-3490202": {
+    "name_ka": "ლოგისტიკა (თბილისი)",
+    "institution_slug": "saqartvelos-biznesis-akademia-sba",
+    "fee": 0
+  },
+  "kompiuteruli-qseli-da-sistemebi-tbilisi-3490203": {
+    "name_ka": "კომპიუტერული ქსელი და სისტემები (თბილისი)",
+    "institution_slug": "saqartvelos-biznesis-akademia-sba",
+    "fee": 0
+  },
+  "vebteqnologiebi-front-end-developmenti-tbilisi-3490204": {
+    "name_ka": "ვებტექნოლოგიები (Front-end დეველოპმენტი) (თბილისი)",
+    "institution_slug": "saqartvelos-biznesis-akademia-sba",
+    "fee": 0
+  },
+  "shromis-usafrtkhoebisa-da-garemosdatsviti-teqnologiebi-tbilisi-3490205": {
+    "name_ka": "შრომის უსაფრთხოებისა და გარემოსდაცვითი ტექნოლოგიები (თბილისი)",
+    "institution_slug": "saqartvelos-biznesis-akademia-sba",
+    "fee": 0
+  },
+  "saeqtno-saqme-tbilisi-3490206": {
+    "name_ka": "საექთნო საქმე (თბილისი)",
+    "institution_slug": "saqartvelos-biznesis-akademia-sba",
+    "fee": 0
+  },
+  "farmatsia-tbilisi-3490207": {
+    "name_ka": "ფარმაცია (თბილისი)",
+    "institution_slug": "saqartvelos-biznesis-akademia-sba",
+    "fee": 0
+  },
+  "sabazho-saqme-tbilisi-3490208": {
+    "name_ka": "საბაჟო საქმე (თბილისი)",
+    "institution_slug": "saqartvelos-biznesis-akademia-sba",
+    "fee": 0
+  },
+  "aghmzrdeli-sachkhere-3500201": {
+    "name_ka": "აღმზრდელი (საჩხერე)",
+    "institution_slug": "biznesisa-da-teqnologiebis-akademia",
+    "fee": 0
+  },
+  "aghmzrdeli-tbilisi-3500202": {
+    "name_ka": "აღმზრდელი (თბილისი)",
+    "institution_slug": "biznesisa-da-teqnologiebis-akademia",
+    "fee": 0
+  },
+  "bughaltruli-aghritskhva-sachkhere-3500203": {
+    "name_ka": "ბუღალტრული აღრიცხვა (საჩხერე)",
+    "institution_slug": "biznesisa-da-teqnologiebis-akademia",
+    "fee": 0
+  },
+  "shromis-usafrtkhoebisa-da-garemosdatsviti-teqnologiebi-sachkhere-3500204": {
+    "name_ka": "შრომის უსაფრთხოებისა და გარემოსდაცვითი ტექნოლოგიები (საჩხერე)",
+    "institution_slug": "biznesisa-da-teqnologiebis-akademia",
+    "fee": 0
+  },
+  "shromis-usafrtkhoebisa-da-garemosdatsviti-teqnologiebi-tbilisi-3500205": {
+    "name_ka": "შრომის უსაფრთხოებისა და გარემოსდაცვითი ტექნოლოგიები (თბილისი)",
+    "institution_slug": "biznesisa-da-teqnologiebis-akademia",
+    "fee": 0
+  },
+  "saeqtno-ganatleba-sachkhere-3500206": {
+    "name_ka": "საექთნო განათლება (საჩხერე)",
+    "institution_slug": "biznesisa-da-teqnologiebis-akademia",
+    "fee": 0
+  },
+  "saeqtno-ganatleba-tbilisi-3500207": {
+    "name_ka": "საექთნო განათლება (თბილისი)",
+    "institution_slug": "biznesisa-da-teqnologiebis-akademia",
+    "fee": 0
+  },
+  "farmatsia-saaftiaqo-sachkhere-3500208": {
+    "name_ka": "ფარმაცია (სააფთიაქო) (საჩხერე)",
+    "institution_slug": "biznesisa-da-teqnologiebis-akademia",
+    "fee": 0
+  },
+  "farmatsia-saaftiaqo-tbilisi-3500209": {
+    "name_ka": "ფარმაცია (სააფთიაქო) (თბილისი)",
+    "institution_slug": "biznesisa-da-teqnologiebis-akademia",
+    "fee": 0
+  },
+  "sabazho-saqme-tbilisi-3500210": {
+    "name_ka": "საბაჟო საქმე (თბილისი)",
+    "institution_slug": "biznesisa-da-teqnologiebis-akademia",
+    "fee": 0
+  },
+  "kompiuteruli-qseli-da-sistemebi-batumi-3240201": {
+    "name_ka": "კომპიუტერული ქსელი და სისტემები (ბათუმი)",
+    "institution_slug": "koleji-bleqsi",
+    "fee": 0
+  },
+  "modis-teqnologia-da-dizaini-batumi-3240202": {
+    "name_ka": "მოდის ტექნოლოგია და დიზაინი (ბათუმი)",
+    "institution_slug": "koleji-bleqsi",
+    "fee": 0
+  },
+  "mghebavi-tyibuli-2370201": {
+    "name_ka": "მღებავი (ტყიბული)",
+    "institution_slug": "saqartvelos-teqnikuri-universitetis-tyibulis-samto-teqnologiuri-instituti",
+    "fee": 0
+  },
+  "sagembane-ganyofilebis-eqspluatatsia-batumi-3230201": {
+    "name_ka": "საგემბანე განყოფილების ექსპლუატაცია (ბათუმი)",
+    "institution_slug": "batumis-umaghlesi-sazghvao-sainzhinro-sastsavlebeli-anri",
+    "fee": 0
+  },
+  "gemis-samanqane-ganyofilebis-eqspluatatsia-batumi-3230202": {
+    "name_ka": "გემის სამანქანე განყოფილების ექსპლუატაცია (ბათუმი)",
+    "institution_slug": "batumis-umaghlesi-sazghvao-sainzhinro-sastsavlebeli-anri",
+    "fee": 0
+  },
+  "skolamdeli-aghzrda-lanchkhuti-2980201": {
+    "name_ka": "სკოლამდელი აღზრდა (ლანჩხუთი)",
+    "institution_slug": "aaip-koleji-horizonti",
+    "fee": 0
+  },
+  "modis-teqnologia-da-dizaini-lanchkhuti-2980202": {
+    "name_ka": "მოდის ტექნოლოგია და დიზაინი (ლანჩხუთი)",
+    "institution_slug": "aaip-koleji-horizonti",
+    "fee": 0
+  },
+  "satyeo-saqme-chokhatauri-2980203": {
+    "name_ka": "სატყეო საქმე (ჩოხატაური)",
+    "institution_slug": "aaip-koleji-horizonti",
+    "fee": 0
+  },
+  "sastumro-momsakhureba-lanchkhuti-2980204": {
+    "name_ka": "სასტუმრო მომსახურება (ლანჩხუთი)",
+    "institution_slug": "aaip-koleji-horizonti",
+    "fee": 0
+  },
+  "aghmzrdeli-marneuli-3610201": {
+    "name_ka": "აღმზრდელი (მარნეული)",
+    "institution_slug": "marneulis-sazogadoebrivi-koleji",
+    "fee": 0
+  },
+  "saeqtno-ganatleba-marneuli-3610202": {
+    "name_ka": "საექთნო განათლება (მარნეული)",
+    "institution_slug": "marneulis-sazogadoebrivi-koleji",
+    "fee": 0
+  },
+  "sastumro-momsakhureba-tbilisi-2380201": {
+    "name_ka": "სასტუმრო მომსახურება (თბილისი)",
+    "institution_slug": "koleji-ikarosi",
+    "fee": 0
+  },
+  "sarestorno-momsakhureba-tbilisi-2380202": {
+    "name_ka": "სარესტორნო მომსახურება (თბილისი)",
+    "institution_slug": "koleji-ikarosi",
+    "fee": 0
+  },
+  "kompiuteruli-qseli-da-sistemebi-batumi-3630201": {
+    "name_ka": "კომპიუტერული ქსელი და სისტემები (ბათუმი)",
+    "institution_slug": "amerikuli-saertashoriso-skola-progresi-batumi",
+    "fee": 0
+  },
+  "veterinaria-gori-3560201": {
+    "name_ka": "ვეტერინარია (გორი)",
+    "institution_slug": "shps-sazogadoebrivi-koleji-amagi",
+    "fee": 0
+  },
+  "saeqtno-ganatleba-gori-3560202": {
+    "name_ka": "საექთნო განათლება (გორი)",
+    "institution_slug": "shps-sazogadoebrivi-koleji-amagi",
+    "fee": 0
+  },
+  "masazhis-terapia-gori-3560203": {
+    "name_ka": "მასაჟის თერაპია (გორი)",
+    "institution_slug": "shps-sazogadoebrivi-koleji-amagi",
+    "fee": 0
+  },
+  "farmatsia-saaftiaqo-gori-3560204": {
+    "name_ka": "ფარმაცია (სააფთიაქო) (გორი)",
+    "institution_slug": "shps-sazogadoebrivi-koleji-amagi",
+    "fee": 0
+  },
+  "bughaltruli-aghritskhva-tbilisi-3370201": {
+    "name_ka": "ბუღალტრული აღრიცხვა (თბილისი)",
+    "institution_slug": "saertashoriso-ganatlebis-akademia-bidzisi",
+    "fee": 0
+  },
+  "saeqtno-ganatleba-tbilisi-3370202": {
+    "name_ka": "საექთნო განათლება (თბილისი)",
+    "institution_slug": "saertashoriso-ganatlebis-akademia-bidzisi",
+    "fee": 0
+  },
+  "farmatsia-saaftiaqo-tbilisi-3370203": {
+    "name_ka": "ფარმაცია (სააფთიაქო) (თბილისი)",
+    "institution_slug": "saertashoriso-ganatlebis-akademia-bidzisi",
+    "fee": 0
+  },
+  "sagembane-ganyofilebis-eqspluatatsia-batumi-3620201": {
+    "name_ka": "საგემბანე განყოფილების ექსპლუატაცია (ბათუმი)",
+    "institution_slug": "meridiani-metoduri-treining-senteri",
+    "fee": 0
+  },
+  "skolamdeli-aghzrda-qutaisi-3550201": {
+    "name_ka": "სკოლამდელი აღზრდა (ქუთაისი)",
+    "institution_slug": "shps-sazogadoebrivi-koleji-kavkasioni",
+    "fee": 0
+  },
+  "skolamdeli-aghzrda-tbilisi-3550202": {
+    "name_ka": "სკოლამდელი აღზრდა (თბილისი)",
+    "institution_slug": "shps-sazogadoebrivi-koleji-kavkasioni",
+    "fee": 0
+  },
+  "bughaltruli-aghritskhva-qutaisi-3550203": {
+    "name_ka": "ბუღალტრული აღრიცხვა (ქუთაისი)",
+    "institution_slug": "shps-sazogadoebrivi-koleji-kavkasioni",
+    "fee": 0
+  },
+  "bughaltruli-aghritskhva-tbilisi-3550204": {
+    "name_ka": "ბუღალტრული აღრიცხვა (თბილისი)",
+    "institution_slug": "shps-sazogadoebrivi-koleji-kavkasioni",
+    "fee": 0
+  },
+  "saeqtno-saqme-tbilisi-3550205": {
+    "name_ka": "საექთნო საქმე (თბილისი)",
+    "institution_slug": "shps-sazogadoebrivi-koleji-kavkasioni",
+    "fee": 0
+  },
+  "saeqtno-saqme-qutaisi-3550206": {
+    "name_ka": "საექთნო საქმე (ქუთაისი)",
+    "institution_slug": "shps-sazogadoebrivi-koleji-kavkasioni",
+    "fee": 0
+  },
+  "farmatsia-saaftiaqo-tbilisi-3550207": {
+    "name_ka": "ფარმაცია (სააფთიაქო) (თბილისი)",
+    "institution_slug": "shps-sazogadoebrivi-koleji-kavkasioni",
+    "fee": 0
+  },
+  "farmatsia-saaftiaqo-qutaisi-3550208": {
+    "name_ka": "ფარმაცია (სააფთიაქო) (ქუთაისი)",
+    "institution_slug": "shps-sazogadoebrivi-koleji-kavkasioni",
+    "fee": 0
+  },
+  "shromis-usafrtkhoebisa-da-garemosdatsviti-teqnologiebi-bestafoni-3600201": {
+    "name_ka": "შრომის უსაფრთხოებისა და გარემოსდაცვითი ტექნოლოგიები (ზესტაფონი)",
+    "institution_slug": "samsheneblo-koleji-konstruqt2",
+    "fee": 0
+  },
+  "azomvit-topografiuli-samushaos-shesruleba-bestafoni-3600202": {
+    "name_ka": "აზომვით-ტოპოგრაფიული სამუშაოს შესრულება (ზესტაფონი)",
+    "institution_slug": "samsheneblo-koleji-konstruqt2",
+    "fee": 0
+  },
+  "kbilis-sateqniko-saqme-batumi-3190201": {
+    "name_ka": "კბილის სატექნიკო საქმე (ბათუმი)",
+    "institution_slug": "batumis-sameditsino-akademia",
+    "fee": 0
+  },
+  "saeqtno-ganatleba-batumi-3190202": {
+    "name_ka": "საექთნო განათლება (ბათუმი)",
+    "institution_slug": "batumis-sameditsino-akademia",
+    "fee": 0
+  },
+  "farmatsia-saaftiaqo-batumi-3190203": {
+    "name_ka": "ფარმაცია (სააფთიაქო) (ბათუმი)",
+    "institution_slug": "batumis-sameditsino-akademia",
+    "fee": 0
+  },
+  "aghmzrdeli-tbilisi-2280201": {
+    "name_ka": "აღმზრდელი (თბილისი)",
+    "institution_slug": "shps-mravalprofiliani-sazogadoebrivi-koleji-imedi",
+    "fee": 0
+  },
+  "shromis-usafrtkhoebisa-da-garemosdatsviti-teqnologiebi-tbilisi-2280202": {
+    "name_ka": "შრომის უსაფრთხოებისა და გარემოსდაცვითი ტექნოლოგიები (თბილისი)",
+    "institution_slug": "shps-mravalprofiliani-sazogadoebrivi-koleji-imedi",
+    "fee": 0
+  },
+  "saeqtno-saqme-tbilisi-2280203": {
+    "name_ka": "საექთნო საქმე (თბილისი)",
+    "institution_slug": "shps-mravalprofiliani-sazogadoebrivi-koleji-imedi",
+    "fee": 0
+  },
+  "farmatsia-saaftiaqo-tbilisi-2280204": {
+    "name_ka": "ფარმაცია (სააფთიაქო) (თბილისი)",
+    "institution_slug": "shps-mravalprofiliani-sazogadoebrivi-koleji-imedi",
+    "fee": 0
+  },
+  "bughaltruli-aghritskhva-qobuleti-3280201": {
+    "name_ka": "ბუღალტრული აღრიცხვა (ქობულეთი)",
+    "institution_slug": "koleji-akhali-talgha",
+    "fee": 0
+  },
+  "ghonisdziebebis-organizeba-qobuleti-3280202": {
+    "name_ka": "ღონისძიებების ორგანიზება (ქობულეთი)",
+    "institution_slug": "koleji-akhali-talgha",
+    "fee": 0
+  },
+  "administratsiuli-servisebi-qobuleti-3280203": {
+    "name_ka": "ადმინისტრაციული სერვისები (ქობულეთი)",
+    "institution_slug": "koleji-akhali-talgha",
+    "fee": 0
+  },
+  "kompiuteruli-qseli-da-sistemebi-qobuleti-3280204": {
+    "name_ka": "კომპიუტერული ქსელი და სისტემები (ქობულეთი)",
+    "institution_slug": "koleji-akhali-talgha",
+    "fee": 0
+  },
+  "front-end-developmenti-qobuleti-3280205": {
+    "name_ka": "Front-end დეველოპმენტი (ქობულეთი)",
+    "institution_slug": "koleji-akhali-talgha",
+    "fee": 0
+  },
+  "veterinaria-khulo-3280206": {
+    "name_ka": "ვეტერინარია (ხულო)",
+    "institution_slug": "koleji-akhali-talgha",
+    "fee": 0
+  },
+  "saeqtno-ganatleba-qobuleti-3280207": {
+    "name_ka": "საექთნო განათლება (ქობულეთი)",
+    "institution_slug": "koleji-akhali-talgha",
+    "fee": 0
+  },
+  "masazhis-terapia-qobuleti-3280208": {
+    "name_ka": "მასაჟის თერაპია (ქობულეთი)",
+    "institution_slug": "koleji-akhali-talgha",
+    "fee": 0
+  },
+  "farmatsia-qobuleti-3280209": {
+    "name_ka": "ფარმაცია (ქობულეთი)",
+    "institution_slug": "koleji-akhali-talgha",
+    "fee": 0
+  },
+  "sastumro-momsakhureba-khulo-3280210": {
+    "name_ka": "სასტუმრო მომსახურება (ხულო)",
+    "institution_slug": "koleji-akhali-talgha",
+    "fee": 0
+  },
+  "sastumro-momsakhureba-qobuleti-3280211": {
+    "name_ka": "სასტუმრო მომსახურება (ქობულეთი)",
+    "institution_slug": "koleji-akhali-talgha",
+    "fee": 0
+  },
+  "sarestorno-momsakhureba-qobuleti-3280212": {
+    "name_ka": "სარესტორნო მომსახურება (ქობულეთი)",
+    "institution_slug": "koleji-akhali-talgha",
+    "fee": 0
+  },
+  "skolamdeli-aghzrda-khobi-2460201": {
+    "name_ka": "სკოლამდელი აღზრდა (ხობი)",
+    "institution_slug": "koleji-fazisi",
+    "fee": 0
+  },
+  "skolamdeli-aghzrda-foti-2460202": {
+    "name_ka": "სკოლამდელი აღზრდა (ფოთი)",
+    "institution_slug": "koleji-fazisi",
+    "fee": 0
+  },
+  "bughaltruli-aghritskhva-foti-2460203": {
+    "name_ka": "ბუღალტრული აღრიცხვა (ფოთი)",
+    "institution_slug": "koleji-fazisi",
+    "fee": 0
+  },
+  "tvirtebis-eqspedireba-foti-2460204": {
+    "name_ka": "ტვირთების ექსპედირება (ფოთი)",
+    "institution_slug": "koleji-fazisi",
+    "fee": 0
+  },
+  "administratsiuli-servisebi-foti-2460205": {
+    "name_ka": "ადმინისტრაციული სერვისები (ფოთი)",
+    "institution_slug": "koleji-fazisi",
+    "fee": 0
+  },
+  "kompiuteruli-qseli-da-sistemebi-foti-2460206": {
+    "name_ka": "კომპიუტერული ქსელი და სისტემები (ფოთი)",
+    "institution_slug": "koleji-fazisi",
+    "fee": 0
+  },
+  "front-end-developmenti-foti-2460207": {
+    "name_ka": "Front-end დეველოპმენტი (ფოთი)",
+    "institution_slug": "koleji-fazisi",
+    "fee": 0
+  },
+  "shromis-usafrtkhoebisa-da-garemosdatsviti-teqnologiebi-foti-2460208": {
+    "name_ka": "შრომის უსაფრთხოებისა და გარემოსდაცვითი ტექნოლოგიები (ფოთი)",
+    "institution_slug": "koleji-fazisi",
+    "fee": 0
+  },
+  "shefudeba-foti-2460209": {
+    "name_ka": "შედუღება (ფოთი)",
+    "institution_slug": "koleji-fazisi",
+    "fee": 0
+  },
+  "modis-teqnologia-da-dizaini-foti-2460210": {
+    "name_ka": "მოდის ტექნოლოგია და დიზაინი (ფოთი)",
+    "institution_slug": "koleji-fazisi",
+    "fee": 0
+  },
+  "sadurglo-saqme-foti-2460211": {
+    "name_ka": "სადურგლო საქმე (ფოთი)",
+    "institution_slug": "koleji-fazisi",
+    "fee": 0
+  },
+  "sastumro-momsakhureba-foti-2460212": {
+    "name_ka": "სასტუმრო მომსახურება (ფოთი)",
+    "institution_slug": "koleji-fazisi",
+    "fee": 0
+  },
+  "sarestorno-momsakhureba-foti-2460213": {
+    "name_ka": "სარესტორნო მომსახურება (ფოთი)",
+    "institution_slug": "koleji-fazisi",
+    "fee": 0
+  },
+  "konditeria-foti-2460214": {
+    "name_ka": "კონდიტერია (ფოთი)",
+    "institution_slug": "koleji-fazisi",
+    "fee": 0
+  },
+  "amtsis-operireba-foti-2460215": {
+    "name_ka": "ამწის ოპერირება (ფოთი)",
+    "institution_slug": "koleji-fazisi",
+    "fee": 0
+  },
+  "aghmzrdeli-rustavi-3530201": {
+    "name_ka": "აღმზრდელი (რუსთავი)",
+    "institution_slug": "shps-iakob-gogebashvilis-sakhelobis-qartuli-koleji",
+    "fee": 0
+  },
+  "aghmzrdeli-tbilisi-2090201": {
+    "name_ka": "აღმზრდელი (თბილისი)",
+    "institution_slug": "shps-orientiri",
+    "fee": 0
+  },
+  "saeqtno-ganatleba-tbilisi-2090202": {
+    "name_ka": "საექთნო განათლება (თბილისი)",
+    "institution_slug": "shps-orientiri",
+    "fee": 0
+  },
+  "masazhis-terapia-tbilisi-2090203": {
+    "name_ka": "მასაჟის თერაპია (თბილისი)",
+    "institution_slug": "shps-orientiri",
+    "fee": 0
+  },
+  "farmatsia-saaftiaqo-tbilisi-2090204": {
+    "name_ka": "ფარმაცია (სააფთიაქო) (თბილისი)",
+    "institution_slug": "shps-orientiri",
+    "fee": 0
+  },
+  "sagembane-ganyofilebis-rigiti-matrosi-batumi-3250201": {
+    "name_ka": "საგემბანე განყოფილების რიგითი - მატროსი (ბათუმი)",
+    "institution_slug": "sazogadoebrivi-sastsavlo-sanvrtneli-tsentri-ekvatori",
+    "fee": 0
+  },
+  "samanqane-ganyofilebis-rigiti-motoristi-batumi-3250202": {
+    "name_ka": "სამანქანე განყოფილების რიგითი - მოტორისტი (ბათუმი)",
+    "institution_slug": "sazogadoebrivi-sastsavlo-sanvrtneli-tsentri-ekvatori",
+    "fee": 0
+  },
+  "saeqtno-ganatleba-tbilisi-3430201": {
+    "name_ka": "საექთნო განათლება (თბილისი)",
+    "institution_slug": "koleji-mesame-sameditsino",
+    "fee": 0
+  },
+  "farmatsia-saaftiaqo-tbilisi-3430202": {
+    "name_ka": "ფარმაცია (სააფთიაქო) (თბილისი)",
+    "institution_slug": "koleji-mesame-sameditsino",
+    "fee": 0
+  },
+  "kompiuteruli-qseli-da-sistemebi-tbilisi-3510202": {
+    "name_ka": "კომპიუტერული ქსელი და სისტემები (თბილისი)",
+    "institution_slug": "sqilvili",
+    "fee": 0
+  },
+  "front-end-developmenti-tbilisi-3510203": {
+    "name_ka": "Front-end დეველოპმენტი (თბილისი)",
+    "institution_slug": "sqilvili",
+    "fee": 0
+  },
+  "front-end-developmenti-batumi-3510204": {
+    "name_ka": "Front-end დეველოპმენტი (ბათუმი)",
+    "institution_slug": "sqilvili",
+    "fee": 0
+  },
+  "shromis-usafrtkhoebisa-da-garemosdatsviti-teqnologiebi-tbilisi-3520201": {
+    "name_ka": "შრომის უსაფრთხოებისა და გარემოსდაცვითი ტექნოლოგიები (თბილისი)",
+    "institution_slug": "usafrtkhoebis-akademiis-sastsavlo-tsentri",
+    "fee": 0
+  },
+  "sastumro-momsakhureba-baghdati-3580201": {
+    "name_ka": "სასტუმრო მომსახურება (ბაღდათი)",
+    "institution_slug": "shps-msoflio-ganatlebis-akademia",
+    "fee": 0
+  },
+  "aghmzrdeli-marneuli-3470201": {
+    "name_ka": "აღმზრდელი (მარნეული)",
+    "institution_slug": "geoglobal-akademia",
+    "fee": 0
+  },
+  "veterinaria-marneuli-3470202": {
+    "name_ka": "ვეტერინარია (მარნეული)",
+    "institution_slug": "geoglobal-akademia",
+    "fee": 0
+  },
+  "saeqtno-saqme-marneuli-3470203": {
+    "name_ka": "საექთნო საქმე (მარნეული)",
+    "institution_slug": "geoglobal-akademia",
+    "fee": 0
+  },
+  "farmatsia-saaftiaqo-marneuli-3470204": {
+    "name_ka": "ფარმაცია (სააფთიაქო) (მარნეული)",
+    "institution_slug": "geoglobal-akademia",
+    "fee": 0
+  },
+  "sabazho-saqme-marneuli-3470205": {
+    "name_ka": "საბაჟო საქმე (მარნეული)",
+    "institution_slug": "geoglobal-akademia",
+    "fee": 0
+  },
+  "aghmzrdeli-tbilisi-2130201": {
+    "name_ka": "აღმზრდელი (თბილისი)",
+    "institution_slug": "shps-sazogadoebrivi-koleji-fanaskerteli",
+    "fee": 0
+  },
+  "aghmzrdeli-telavi-2130202": {
+    "name_ka": "აღმზრდელი (თელავი)",
+    "institution_slug": "shps-sazogadoebrivi-koleji-fanaskerteli",
+    "fee": 0
+  },
+  "saeqtno-ganatleba-tbilisi-2130203": {
+    "name_ka": "საექთნო განათლება (თბილისი)",
+    "institution_slug": "shps-sazogadoebrivi-koleji-fanaskerteli",
+    "fee": 0
+  },
+  "saeqtno-ganatleba-telavi-2130204": {
+    "name_ka": "საექთნო განათლება (თელავი)",
+    "institution_slug": "shps-sazogadoebrivi-koleji-fanaskerteli",
+    "fee": 0
+  },
+  "farmatsia-saftiaqo-tbilisi-2130205": {
+    "name_ka": "ფარმაცია (სააფთიაქო) (თბილისი)",
+    "institution_slug": "shps-sazogadoebrivi-koleji-fanaskerteli",
+    "fee": 0
+  },
+  "farmatsia-saftiaqo-telavi-2130206": {
+    "name_ka": "ფარმაცია (სააფთიაქო) (თელავი)",
+    "institution_slug": "shps-sazogadoebrivi-koleji-fanaskerteli",
+    "fee": 0
+  },
+  "modis-teqnologia-da-dizaini-gori-2560201": {
+    "name_ka": "მოდის ტექნოლოგია და დიზაინი (გორი)",
+    "institution_slug": "aaip-koleji-gantiadi",
+    "fee": 0
+  },
+  "aghmzrdeli-zugdidi-3570201": {
+    "name_ka": "აღმზრდელი (ზუგდიდი)",
+    "institution_slug": "shps-sazogadoebrivi-koleji-zugdidis-akademia",
+    "fee": 0
+  },
+  "bughaltruli-aghritskhva-zugdidi-3570202": {
+    "name_ka": "ბუღალტრული აღრიცხვა (ზუგდიდი)",
+    "institution_slug": "shps-sazogadoebrivi-koleji-zugdidis-akademia",
+    "fee": 0
+  }
+}
